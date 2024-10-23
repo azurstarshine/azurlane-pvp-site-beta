@@ -6,6 +6,8 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
 
+gem "wdm", ">= 0.1.0", platforms: :windows
+
 # Needed for future versions of Ruby that will not include these by default
 
 gem "csv", "~> 3.3"
