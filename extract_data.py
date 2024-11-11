@@ -1,5 +1,7 @@
 from collections import defaultdict
 from collections.abc import Collection
+from collections.abc import Mapping
+from collections.abc import Sequence
 import csv
 import dataclasses
 from dataclasses import dataclass
@@ -14,7 +16,7 @@ import json
 from pathlib import Path
 import re
 from types import MappingProxyType
-from typing import assert_never
+# from typing import assert_never
 from urllib.parse import urlparse
 from urllib.parse import unquote as urlunquote
 # from urllib.parse import ParseResult as ParsedUrl
@@ -28,16 +30,22 @@ from mediawiki import MediaWikiPage
 
 HYPERLINK_PATTERN = re.compile(r'=HYPERLINK\("([^"]+)"\s*,\s*"([^"]+)"\)', flags=re.IGNORECASE)
 
-def find_hyperlinks(p):
-    with open(p, encoding='utf-8') as f:
-        reader = csv.reader(f)
 
-        return [
-            cell
-            for row in reader
-            for cell in row
-            if cell.lower().startswith('=hyperlink')
-        ]
+def load_cells(p) -> list[list[str]]:
+    with open(p, encoding='utf-8') as f:
+        return list(csv.reader(f))
+
+
+# def find_hyperlinks(p):
+    # with open(p, encoding='utf-8') as f:
+        # reader = csv.reader(f)
+
+        # return [
+            # cell
+            # for row in reader
+            # for cell in row
+            # if cell.lower().startswith('=hyperlink')
+        # ]
 
 
 # def get_client():
@@ -263,11 +271,74 @@ class Equipment:
 AnyData = Ship | Equipment
 
 
+class EquipmentRank(Enum):
+    OPTIMAL = enum.auto()
+    VIABLE = enum.auto()
+    SITUATIONAL = enum.auto()
+
+
+@dataclass(frozen=True)
+class EquipWithRank:
+    equip: Equipment
+    rank: EquipmentRank
+
+
+@dataclass
+class ShipEquipment:
+    ship: Ship
+    description: str | None = None
+    slots: dict[int, Sequence[EquipWithRank]] = field(default_factory=lambda: defaultdict(list))
+
+    def validate(self):
+        if not self.ship:
+            raise ValueError('No ship')
+
+        if not self.description:
+            raise ValueError('No description')
+
+        if not self.slots:
+            raise ValueError('No equipment slot data')
+
+        EXPECTED_SLOT_KEYS = set(range(1,5+1))
+        missing = EXPECTED_SLOT_KEYS.difference(self.slots.keys())
+        extra = set(self.slots.keys()) - EXPECTED_SLOT_KEYS
+
+        if missing or extra:
+            raise ValueError(f'{missing} slots missing, extra slots {extra}')
+
+        if empty_slots := [slot for slot, equip in self.slots.items() if not equip]:
+            raise ValueError(f'Emtpy slots {empty_slots}')
+
+    @property
+    def desc_preview(self):
+        preview = self.description
+        preview = ' '.join(preview.splitlines())
+
+        if len(preview) < 30:
+            return preview
+        else:
+            return preview[:30] + '...'
+
+
+    def __repr__(self):
+        data_repr = ', '.join([
+            f'ship={self.ship.name}',
+            f'description={self.desc_preview}',
+            'slots=' + ','.join([
+                f'{slot}: ' + ','.join([e.name for e in equips])
+                for slot, equips in self.slots.items()
+            ]),
+        ])
+
+        return f'{type(self).__name__}({data_repr})'
+
+
 EQUIPMENT_CATEGORY = 'equipment'
 SHIP_CATEGORY = 'ships'
 
 DATA_TYPE_CATEGORIES = {EQUIPMENT_CATEGORY, SHIP_CATEGORY}
 
+# Manual overrides for broken page names
 PAGE_NAME_FIXES = {
     'F6F_Hellcat_(HVAR_equipped)': 'Grumman F6F Hellcat (HVAR-Mounted)'
 }
@@ -288,7 +359,7 @@ class DataCache:
         if len(recognized) != 1:
             raise ValueError(f'Unable to determine type of data for {page.title}')
 
-        data_type = next(iter(recognized))
+        data_type = mit.one(recognized)
 
         resolved_url = urlparse(page.url)
 
@@ -385,7 +456,7 @@ class DataCache:
 
         self._data_cache[result.name] = result
         if page_name != result.name:
-            self._data_cache[result.name] = result
+            self._data_cache[page_name] = result
         if original_page_name != page_name:
             self._data_cache[original_page_name] = result
 
@@ -408,60 +479,75 @@ class DataCache:
         return MappingProxyType(self._nicknames)
 
 
-# yaml.add_representer(ShipRarity, enum_to_yaml_repr)
-# yaml.add_representer(HullClass, enum_to_yaml_repr)
-# yaml.add_representer(Ship, dataclass_to_yaml_repr)
-# yaml.add_representer(EquipmentRarity, enum_to_yaml_repr)
-# yaml.add_representer(TechLevel, enum_to_yaml_repr)
-# yaml.add_representer(Equipment, dataclass_to_yaml_repr)
-
-
 if '__main__' == __name__:
     fpath = Path('./Azur Lane EN PvP Guide Gear (Main Fleet) 2024-10-20.csv').resolve()
     client = get_client()
-    # nicknames = defaultdict(set)
     cache = DataCache()
-    failed = []
-    for i, h in enumerate(find_hyperlinks(fpath)):
-        try:
+    failed_hyperlinks = []
+    hyperlink_count = 0
+
+    all_ship_equip = []
+    ship_equip = None
+
+    for rownum, row in enumerate(load_cells(fpath), start=1):
+        for colnum, celltext in enumerate(row):
             page_data, cached = None, None
-            # cached = ''
-            url, nickname = HYPERLINK_PATTERN.match(h).groups()
 
-            # if not page_data:
-                # page_data = fetch_data(client, url, nickname)
-                # page_data_cache[page_data.name] = page_data
-                # if page_data.name != page_name:
-                    # page_data_cache[page_name] = page_data
-            # else:
-                # cached = '(cached)'
+            if celltext.lower().startswith('=hyperlink'):
+                # try:
+                url, nickname = HYPERLINK_PATTERN.search(celltext).groups()
+                page_data, cached = cache.get_data(client, url, nickname)
 
-            # nicknames[page_data.name].add(nicknames)
+                if isinstance(page_data, Ship):
+                    if ship_equip:
+                        ship_equip.validate()
+                        all_ship_equip.append(ship_equip)
+                        print('Completed ship equip', ship_equip)
 
-            page_data, cached = cache.get_data(client, url, nickname)
+                    ship_equip = ShipEquipment(page_data)
+                    print()
+                elif isinstance(page_data, Equipment):
+                    if not ship_equip:
+                        raise Exception('Found equipment outside ship')
 
-            if isinstance(page_data, Ship):
-                print()
-            print(page_data, '(cached)' if cached else '')
+                    slot = 1 + (colnum - 1) // 2
+                    ship_equip.slots[slot].append(page_data)
 
-            # if len(cache.alldata) >= 40:
-                # break
-        except Exception as ex:
-            failed.append((i, h, page_data, cached, ex))
-            # raise
+                print(rownum, colnum, page_data, '(cached)' if cached else '')
+                # except Exception as ex:
+                #     failed_hyperlinks.append((rownum, colnum, celltext, page_data, cached, ex))
+                #     hyperlink_count = hyperlink_count + 1
+                #     # Prevents having to wait for whole script if everything is broken
+                #     if hyperlink_count >= 10 and len(failed_hyperlinks) / hyperlink_count >= 0.75:
+                #         print('Failed hyperlink at', *failed_hyperlinks[-1])
+                #         raise
+            elif ship_equip:
+                if celltext.lower().startswith('=image'):
+                    print(rownum, colnum, 'is an image')
+                elif celltext:
+                    # Not empty, but not an image. Must be description.
 
-            count = i + 1
-            # print(count, len(failed), len(failed) / count)
-            if count >= 10 and len(failed) / count >= 0.75:
-                print(i, h, page_data, cached, ex)
-                raise
+                    if ship_equip.description:
+                        # Programming error. Unknown content type
+                        raise Exception(f'Treating second cell at ({rownum}, {colnum}) as description for {ship_equip.ship.name}')
+
+                    ship_equip.description = celltext
+                    print(rownum, colnum, 'Description:', ship_equip.desc_preview)
+                elif not celltext:
+                    print(rownum, colnum, 'is empty')
+                else:
+                    # Inside a ship, but no idea what this cell contains
+                    raise NotImplementedError(f'Unrecognized cell content at ({rownum}, {colnum})')
+            else:
+                print('No ship found yet')
+
+        # if len(all_ship_equip) >= 5:
+            # break
 
     print()
 
     print()
     print('Multiple names:')
-    # for n, d in filter((lambda i: len(i[1].nicknames) > 1), page_data_cache.items()):
-        # print(n, d)
     for name, nicknames in cache.nicknames.items():
         if len(nicknames) > 1:
             print(f'{name}: ' + ','.join(nicknames))
@@ -478,9 +564,15 @@ if '__main__' == __name__:
             print('{nickname}: ' + ','.join(names))
 
     print()
-    print('Failed:')
-    for f in failed:
+    print('Failed hyperlinks:')
+    for f in failed_hyperlinks:
         print(*f)
+
+
+    print()
+    print('Equipment loadouts:')
+    for se in all_ship_equip:
+        print(se)
 
 
     pvp_json_dump = partial(json.dump, indent=4, default=to_json_serializable)
