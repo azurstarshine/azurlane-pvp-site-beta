@@ -1,0 +1,4 @@
+pymediawiki
+more-itertools
+beautifulsoup4
+lxml

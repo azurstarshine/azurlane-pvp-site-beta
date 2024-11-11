@@ -2,7 +2,6 @@ from collections import defaultdict
 from collections.abc import Collection
 from collections.abc import Mapping
 from collections.abc import Sequence
-import csv
 import dataclasses
 from dataclasses import dataclass
 from dataclasses import field
@@ -11,51 +10,18 @@ import enum
 from enum import Enum
 from functools import total_ordering
 from functools import partial
-from itertools import islice
 import json
 from pathlib import Path
 import re
 from types import MappingProxyType
-# from typing import assert_never
 from urllib.parse import urlparse
 from urllib.parse import unquote as urlunquote
-# from urllib.parse import ParseResult as ParsedUrl
 import warnings
 
+from bs4 import BeautifulSoup
 import more_itertools as mit
-# import mwclient
 from mediawiki import MediaWiki
 from mediawiki import MediaWikiPage
-
-
-HYPERLINK_PATTERN = re.compile(r'=HYPERLINK\("([^"]+)"\s*,\s*"([^"]+)"\)', flags=re.IGNORECASE)
-
-
-def load_cells(p) -> list[list[str]]:
-    with open(p, encoding='utf-8') as f:
-        return list(csv.reader(f))
-
-
-# def find_hyperlinks(p):
-    # with open(p, encoding='utf-8') as f:
-        # reader = csv.reader(f)
-
-        # return [
-            # cell
-            # for row in reader
-            # for cell in row
-            # if cell.lower().startswith('=hyperlink')
-        # ]
-
-
-# def get_client():
-    # api_url = urlparse('https://azurlane.koumakan.jp/w/api.php')
-
-    # return mwclient.Site(
-        # api_url.netloc,
-        # scheme=api_url.scheme,
-        # path=api_url.path.removesuffix('api.php').removesuffix('/') + '/',
-    # )
 
 
 def get_client():
@@ -272,9 +238,12 @@ AnyData = Ship | Equipment
 
 
 class EquipmentRank(Enum):
-    OPTIMAL = enum.auto()
-    VIABLE = enum.auto()
-    SITUATIONAL = enum.auto()
+    OPTIMAL = ('#5AD766')
+    VIABLE = ('#FFCE32')
+    SITUATIONAL = ('#E02F2F')
+
+    def __init__(self, bgcolor):
+        self.bgcolor = bgcolor
 
 
 @dataclass(frozen=True)
@@ -283,11 +252,13 @@ class EquipWithRank:
     rank: EquipmentRank
 
 
+EQUIPMENT_SLOT_KEYS = {1, 2, 3, 'aux'}
+
 @dataclass
-class ShipEquipment:
+class ShipUsage:
     ship: Ship
     description: str | None = None
-    slots: dict[int, Sequence[EquipWithRank]] = field(default_factory=lambda: defaultdict(list))
+    slots: dict[int | str, Sequence[EquipWithRank]] = field(default_factory=lambda: defaultdict(list))
 
     def validate(self):
         if not self.ship:
@@ -299,9 +270,8 @@ class ShipEquipment:
         if not self.slots:
             raise ValueError('No equipment slot data')
 
-        EXPECTED_SLOT_KEYS = set(range(1,5+1))
-        missing = EXPECTED_SLOT_KEYS.difference(self.slots.keys())
-        extra = set(self.slots.keys()) - EXPECTED_SLOT_KEYS
+        missing = EQUIPMENT_SLOT_KEYS.difference(self.slots.keys())
+        extra = set(self.slots.keys()) - EQUIPMENT_SLOT_KEYS
 
         if missing or extra:
             raise ValueError(f'{missing} slots missing, extra slots {extra}')
@@ -320,14 +290,16 @@ class ShipEquipment:
             return preview[:30] + '...'
 
 
-    def __repr__(self):
+    def __str__(self):
         data_repr = ', '.join([
             f'ship={self.ship.name}',
             f'description={self.desc_preview}',
-            'slots=' + ','.join([
-                f'{slot}: ' + ','.join([e.name for e in equips])
+            'slots={'
+            + ','.join([
+                f'{slot}: [' + ','.join([str(e) for e in equips]) + ']'
                 for slot, equips in self.slots.items()
-            ]),
+            ])
+            + '}',
         ])
 
         return f'{type(self).__name__}({data_repr})'
@@ -466,6 +438,11 @@ class DataCache:
         return result, False
 
     def get_data(self, client: MediaWiki, url: str, nickname: str) -> tuple[AnyData, bool]:
+        '''
+        Fetches data, using cache if possible and reading from wiki if not.
+
+        Returns: data and whether data was cached
+        '''
         result, cached = self._resolve_data(client, url)
         self._nicknames[result.name].add(nickname)
         return result, cached
@@ -479,70 +456,107 @@ class DataCache:
         return MappingProxyType(self._nicknames)
 
 
-if '__main__' == __name__:
-    fpath = Path('./Azur Lane EN PvP Guide Gear (Main Fleet) 2024-10-20.csv').resolve()
-    client = get_client()
-    cache = DataCache()
-    failed_hyperlinks = []
-    hyperlink_count = 0
+def try_parse_json(json_text):
+    try:
+        return json.loads(json_text)
+    except json.JSONDecodeError:
+        return None
 
-    all_ship_equip = []
-    ship_equip = None
 
-    for rownum, row in enumerate(load_cells(fpath), start=1):
-        for colnum, celltext in enumerate(row):
+def parse_equip_table(
+    table,
+    client,
+    cache,
+):
+    # failed_hyperlinks = []
+    # hyperlink_count = 0
+
+    usages = []
+    current_usage = None
+
+    for rownum, row in enumerate(table.find_all('tr'), start=1):
+        for colnum, cell in enumerate(row.find_all('td'), start=1):
             page_data, cached = None, None
 
-            if celltext.lower().startswith('=hyperlink'):
+            link_children = cell.find_all('a')
+
+            if len(link_children) == 1:
                 # try:
-                url, nickname = HYPERLINK_PATTERN.search(celltext).groups()
+                #     hyperlink_count = hyperlink_count + 1
+                url = link_children[0].attrs['href']
+                nickname = link_children[0].text
+
                 page_data, cached = cache.get_data(client, url, nickname)
 
                 if isinstance(page_data, Ship):
-                    if ship_equip:
-                        ship_equip.validate()
-                        all_ship_equip.append(ship_equip)
-                        print('Completed ship equip', ship_equip)
+                    if current_usage:
+                        current_usage.validate()
+                        usages.append(current_usage)
+                        print('Completed ship equip', current_usage)
 
-                    ship_equip = ShipEquipment(page_data)
+                    current_usage = ShipUsage(page_data)
                     print()
                 elif isinstance(page_data, Equipment):
-                    if not ship_equip:
-                        raise Exception('Found equipment outside ship')
-
-                    slot = 1 + (colnum - 1) // 2
-                    ship_equip.slots[slot].append(page_data)
+                    if current_usage:
+                        slot = colnum // 2
+                        if slot in (4,5):
+                            slot = 'aux'
+                        current_usage.slots[slot].append(page_data)
+                    else:
+                        warnings.warn(f'Found equipment outside ship: {page_data.name}')
 
                 print(rownum, colnum, page_data, '(cached)' if cached else '')
                 # except Exception as ex:
                 #     failed_hyperlinks.append((rownum, colnum, celltext, page_data, cached, ex))
-                #     hyperlink_count = hyperlink_count + 1
                 #     # Prevents having to wait for whole script if everything is broken
                 #     if hyperlink_count >= 10 and len(failed_hyperlinks) / hyperlink_count >= 0.75:
                 #         print('Failed hyperlink at', *failed_hyperlinks[-1])
                 #         raise
-            elif ship_equip:
-                if celltext.lower().startswith('=image'):
+            elif current_usage:
+                if cell.attrs.get('data-sheets-formula', '').lower().startswith('=image'):
                     print(rownum, colnum, 'is an image')
-                elif celltext:
-                    # Not empty, but not an image. Must be description.
+                elif (
+                    cell.text
+                    and not link_children
+                    and (parsed_value := try_parse_json(cell.attrs.get('data-sheets-value')))
+                    and parsed_value.get('2')
+                ):
+                    # Not empty, no link, not an image, and has JSON in value attr.
+                    # Must be description?
 
-                    if ship_equip.description:
-                        # Programming error. Unknown content type
-                        raise Exception(f'Treating second cell at ({rownum}, {colnum}) as description for {ship_equip.ship.name}')
+                    if current_usage.description:
+                        # Programming error. Need to distinguish description better.
+                        raise Exception(f'Treating cell at ({rownum}, {colnum}) as second description for {current_usage.ship.name}')
 
-                    ship_equip.description = celltext
-                    print(rownum, colnum, 'Description:', ship_equip.desc_preview)
-                elif not celltext:
+                    # Using the parsed JSON from data-sheets-value preserves all newlines
+                    # and other characters the HTML escapes without having to transform it back.
+                    current_usage.description = parsed_value['2']
+                    print(rownum, colnum, 'Description:', current_usage.desc_preview)
+                elif not cell.text:
+                    # Check this last to avoid accidentally missing other possibilities
+                    # At present, images have an error message as the cell value, but this could
+                    # potentially change to an empty value later, so check attribute based
+                    # possibilities first.
                     print(rownum, colnum, 'is empty')
                 else:
                     # Inside a ship, but no idea what this cell contains
                     raise NotImplementedError(f'Unrecognized cell content at ({rownum}, {colnum})')
             else:
-                print('No ship found yet')
+                print(rownum, colnum, 'No ship found yet')
 
-        # if len(all_ship_equip) >= 5:
-            # break
+    return usages
+
+if '__main__' == __name__:
+    with open(Path('./exports/Azur Lane EN PvP Guide 2024-10-20.html').resolve(), encoding='utf-8') as f:
+        soup = BeautifulSoup(f, 'lxml')
+    client = get_client()
+    cache = DataCache()
+
+    usages = []
+
+    for table_name in ['table4', 'table5']:
+        table_element = soup.find('a', {'name': table_name}).find_next('table')
+        usages.extend(parse_equip_table(table_element, client, cache))
 
     print()
 
@@ -563,16 +577,11 @@ if '__main__' == __name__:
         if len(names) > 1:
             print('{nickname}: ' + ','.join(names))
 
-    print()
-    print('Failed hyperlinks:')
-    for f in failed_hyperlinks:
-        print(*f)
-
 
     print()
     print('Equipment loadouts:')
-    for se in all_ship_equip:
-        print(se)
+    for u in usages:
+        print(u)
 
 
     pvp_json_dump = partial(json.dump, indent=4, default=to_json_serializable)
