@@ -33,16 +33,6 @@ def get_client():
     )
 
 
-def to_json_serializable(o):
-    if dataclasses.is_dataclass(o):
-        return dataclasses.asdict(o)
-
-    if isinstance(o, Enum):
-        return o.name
-
-    raise TypeError(f'Cannot serialize {o} {type(o).__name__})')
-
-
 class RarityColor(Enum):
     GRAY = enum.auto()
     BLUE = enum.auto()
@@ -561,6 +551,27 @@ def parse_equip_table(
 
     return usages
 
+
+def to_json_serializable(o):
+    if isinstance(o, EquipWithRank):
+        return {'name': o.equip.name, 'rank': str(o.rank)}
+
+    if isinstance(o, ShipUsage):
+        return {
+            'ship': o.ship.name,
+            'description': o.description,
+            'equipment': o.slots,
+        }
+
+    if dataclasses.is_dataclass(o):
+        return dataclasses.asdict(o)
+
+    if isinstance(o, Enum):
+        return o.name
+
+    raise TypeError(f'Cannot serialize {o} {type(o).__name__})')
+
+
 if '__main__' == __name__:
     with open(Path('./exports/Azur Lane EN PvP Guide 2024-10-20.html').resolve(), encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'lxml')
@@ -609,4 +620,8 @@ if '__main__' == __name__:
     ships = [d for d in cache.alldata if isinstance(d, Ship)]
     with open(Path('./_data/ships.json'), 'w', encoding='utf-8') as f:
         pvp_json_dump(ships, f)
+        print('Wrote', f.name)
+
+    with open(Path('./_data/ship_usage.json'), 'w', encoding='utf-8') as f:
+        pvp_json_dump(usages, f)
         print('Wrote', f.name)
