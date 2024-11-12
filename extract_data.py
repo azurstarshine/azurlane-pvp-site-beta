@@ -243,13 +243,25 @@ class EquipmentRank(Enum):
     SITUATIONAL = ('#E02F2F')
 
     def __init__(self, bgcolor):
-        self.bgcolor = bgcolor
+        self.bgcolor = bgcolor.lower()
+
+    def __str__(self):
+        return self.name
+
+    def __repr__(self):
+        return f'<{type(self).__name__}:{self}>'
+
+EQUIP_RANK_BY_COLOR = {r.bgcolor: r for r in EquipmentRank}
+
 
 
 @dataclass(frozen=True)
 class EquipWithRank:
     equip: Equipment
     rank: EquipmentRank
+
+    def __str__(self):
+        return f'{self.equip.name} ({self.rank.name.lower()})'
 
 
 EQUIPMENT_SLOT_KEYS = {1, 2, 3, 'aux'}
@@ -501,7 +513,10 @@ def parse_equip_table(
                         slot = colnum // 2
                         if slot in (4,5):
                             slot = 'aux'
-                        current_usage.slots[slot].append(page_data)
+
+                        rank = EQUIP_RANK_BY_COLOR[cell.attrs['bgcolor'].lower()]
+
+                        current_usage.slots[slot].append(EquipWithRank(page_data, rank))
                     else:
                         warnings.warn(f'Found equipment outside ship: {page_data.name}')
 
