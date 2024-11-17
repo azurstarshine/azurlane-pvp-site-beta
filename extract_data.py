@@ -144,6 +144,7 @@ HULL_CLASS_BY_CATEGORY = {hc.category_name: hc for hc in HullClass}
 @dataclass(frozen=True)
 class Ship:
     name: str
+    gid: int
     url: str
     rarity: ShipRarity
     retrofitted: bool
@@ -338,6 +339,18 @@ class DataCache:
         resolved_url = urlparse(page.url)
 
         if data_type == SHIP_CATEGORY:
+            available_gids = [
+                int(m)
+                # Python automatically extracts the capture group
+                for m in re.findall(r'\|\s*groupid\s*=\s*(\d+).*?\|', page.wikitext, re.IGNORECASE | re.DOTALL)
+            ]
+
+            gid = mit.one(
+                available_gids,
+                ValueError(f'No GroupID found in {page.title}'),
+                ValueError(f'Multiple GroupIDs found in {page.title}: {available_gids}')
+            )
+
             retrofit = RETROFIT_CATEGORY in categories
 
             rarity_cat = categories.intersection(SHIP_RARITY_BY_CATEGORY)
@@ -366,6 +379,7 @@ class DataCache:
 
             return Ship(
                 page.title,
+                gid,
                 resolved_url.geturl(),
                 rarity,
                 retrofit,
