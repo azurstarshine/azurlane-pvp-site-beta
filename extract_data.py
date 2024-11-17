@@ -219,6 +219,7 @@ class Equipment:
     url: str
     stars: int
     tech_level: TechLevel
+    image_id: int
     # equip_type: str
 
     @property
@@ -389,6 +390,7 @@ class DataCache:
         elif data_type == EQUIPMENT_CATEGORY:
             available_stars = [
                 int(m)
+                # Python automatically extracts the capture group
                 for m in re.findall(r'\|\s*stars\s*=\s*(\d+).*?\|', page.wikitext, re.IGNORECASE | re.DOTALL)
             ]
 
@@ -401,6 +403,7 @@ class DataCache:
 
             available_tech_levels = [
                 TechLevel(int(m))
+                # Python automatically extracts the capture group
                 for m in re.findall(r'\|\s*tech\s*=\s*T(\d+).*?\|', page.wikitext, re.IGNORECASE | re.DOTALL)
             ]
 
@@ -412,11 +415,24 @@ class DataCache:
             if len(available_tech_levels) > 1:
                 resolved_url = resolved_url._replace(fragment=tech_level.url_fragment)
 
+            available_image_ids = {
+                int(m)
+                # Python automatically extracts the capture group
+                for m in re.findall(r'\|\s*Image\s*=\s*(\d+).*?\|', page.wikitext, re.IGNORECASE | re.DOTALL)
+            }
+
+            image_id = mit.one(
+                available_image_ids,
+                ValueError(f'No image ID found in {page.title}'),
+                ValueError(f'Multiple image IDs found in {page.title}: {available_image_ids}')
+            )
+
             return Equipment(
                 page.title,
                 resolved_url.geturl(),
                 stars,
                 tech_level,
+                image_id,
             )
         else:
             raise NotImplementedError(f'Extracting data from {data_type} not yet implemented')
