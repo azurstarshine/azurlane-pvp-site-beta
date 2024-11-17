@@ -13,6 +13,7 @@ from functools import partial
 import json
 from pathlib import Path
 import re
+from time import sleep
 from types import MappingProxyType
 from urllib.parse import urlparse
 from urllib.parse import unquote as urlunquote
@@ -484,84 +485,87 @@ def parse_equip_table(
     client,
     cache,
 ):
-    # failed_hyperlinks = []
-    # hyperlink_count = 0
-
     usages = []
+    failures = []
     current_usage = None
 
     for rownum, row in enumerate(table.find_all('tr'), start=1):
         for colnum, cell in enumerate(row.find_all('td'), start=1):
-            page_data, cached = None, None
+            try:
+                page_data, cached = None, None
 
-            link_children = cell.find_all('a')
+                link_children = cell.find_all('a')
 
-            if len(link_children) == 1:
-                # try:
-                #     hyperlink_count = hyperlink_count + 1
-                url = link_children[0].attrs['href']
-                nickname = link_children[0].text
+                if len(link_children) == 1:
+                    url = link_children[0].attrs['href']
+                    nickname = link_children[0].text
 
-                page_data, cached = cache.get_data(client, url, nickname)
+                    page_data, cached = cache.get_data(client, url, nickname)
 
-                if isinstance(page_data, Ship):
-                    if current_usage:
-                        current_usage.validate()
-                        usages.append(current_usage)
-                        print('Completed ship equip', current_usage)
+                    if isinstance(page_data, Ship):
+                        if current_usage:
+                            current_usage.validate()
+                            usages.append(current_usage)
+                            print('Completed ship equip', current_usage)
 
-                    current_usage = ShipUsage(page_data)
-                    print()
-                elif isinstance(page_data, Equipment):
-                    if current_usage:
-                        slot = colnum // 2
-                        if slot in (4,5):
-                            slot = 'aux'
+                        current_usage = ShipUsage(page_data)
+                        print()
+                    elif isinstance(page_data, Equipment):
+                        if current_usage:
+                            slot = colnum // 2
+                            if slot in (4,5):
+                                slot = 'aux'
 
-                        rank = EQUIP_RANK_BY_COLOR[cell.attrs['bgcolor'].lower()]
+                            rank = EQUIP_RANK_BY_COLOR[cell.attrs['bgcolor'].lower()]
 
-                        current_usage.slots[slot].append(EquipWithRank(page_data, rank))
+                            current_usage.slots[slot].append(EquipWithRank(page_data, rank))
+                        else:
+                            warnings.warn(f'Found equipment outside ship: {page_data.name}')
+
+                    print(rownum, colnum, page_data, '(cached)' if cached else '')
+                elif current_usage:
+                    if cell.attrs.get('data-sheets-formula', '').lower().startswith('=image'):
+                        print(rownum, colnum, 'is an image')
+                    elif (
+                        cell.text
+                        and not link_children
+                        and (parsed_value := try_parse_json(cell.attrs.get('data-sheets-value')))
+                        and parsed_value.get('2')
+                    ):
+                        # Not empty, no link, not an image, and has JSON in value attr.
+                        # Must be description?
+
+                        if current_usage.description:
+                            # Programming error. Need to distinguish description better.
+                            raise Exception(f'Treating cell at ({rownum}, {colnum}) as second description for {current_usage.ship.name}')
+
+                        # Using the parsed JSON from data-sheets-value preserves all newlines
+                        # and other characters the HTML escapes without having to transform it back.
+                        current_usage.description = parsed_value['2']
+                        print(rownum, colnum, 'Description:', current_usage.desc_preview)
+                    elif not cell.text:
+                        # Check this last to avoid accidentally missing other possibilities
+                        # At present, images have an error message as the cell value, but this could
+                        # potentially change to an empty value later, so check attribute based
+                        # possibilities first.
+                        print(rownum, colnum, 'is empty')
                     else:
-                        warnings.warn(f'Found equipment outside ship: {page_data.name}')
-
-                print(rownum, colnum, page_data, '(cached)' if cached else '')
-                # except Exception as ex:
-                #     failed_hyperlinks.append((rownum, colnum, celltext, page_data, cached, ex))
-                #     # Prevents having to wait for whole script if everything is broken
-                #     if hyperlink_count >= 10 and len(failed_hyperlinks) / hyperlink_count >= 0.75:
-                #         print('Failed hyperlink at', *failed_hyperlinks[-1])
-                #         raise
-            elif current_usage:
-                if cell.attrs.get('data-sheets-formula', '').lower().startswith('=image'):
-                    print(rownum, colnum, 'is an image')
-                elif (
-                    cell.text
-                    and not link_children
-                    and (parsed_value := try_parse_json(cell.attrs.get('data-sheets-value')))
-                    and parsed_value.get('2')
-                ):
-                    # Not empty, no link, not an image, and has JSON in value attr.
-                    # Must be description?
-
-                    if current_usage.description:
-                        # Programming error. Need to distinguish description better.
-                        raise Exception(f'Treating cell at ({rownum}, {colnum}) as second description for {current_usage.ship.name}')
-
-                    # Using the parsed JSON from data-sheets-value preserves all newlines
-                    # and other characters the HTML escapes without having to transform it back.
-                    current_usage.description = parsed_value['2']
-                    print(rownum, colnum, 'Description:', current_usage.desc_preview)
-                elif not cell.text:
-                    # Check this last to avoid accidentally missing other possibilities
-                    # At present, images have an error message as the cell value, but this could
-                    # potentially change to an empty value later, so check attribute based
-                    # possibilities first.
-                    print(rownum, colnum, 'is empty')
+                        # Inside a ship, but no idea what this cell contains
+                        raise NotImplementedError(f'Unrecognized cell content at ({rownum}, {colnum})')
                 else:
-                    # Inside a ship, but no idea what this cell contains
-                    raise NotImplementedError(f'Unrecognized cell content at ({rownum}, {colnum})')
-            else:
-                print(rownum, colnum, 'No ship found yet')
+                    print(rownum, colnum, 'No ship found yet')
+            except Exception as ex:
+                print('Error:', rownum, colnum, cell, ex)
+                sleep(5)
+                failures.append((rownum, colnum, cell, current_usage, ex))
+                # Skip over current ship
+                current_usage = None
+
+    if failures:
+        print('Failed to load:')
+        for f in failures:
+            print(*f)
+        input('Press enter to continue')
 
     return usages
 
