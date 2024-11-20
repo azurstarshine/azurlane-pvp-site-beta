@@ -25,6 +25,10 @@ from mediawiki import MediaWiki
 from mediawiki import MediaWikiPage
 
 
+PROJECT_ROOT = Path(__file__).resolve().parent
+SITE_SOURCE = PROJECT_ROOT / 'sitesource'
+
+
 def get_client():
     return MediaWiki(
         'https://azurlane.koumakan.jp/w/api.php',
@@ -607,7 +611,7 @@ def to_json_serializable(o):
 
 
 if '__main__' == __name__:
-    with open(Path('./exports/Azur Lane EN PvP Guide 2024-10-20.html').resolve(), encoding='utf-8') as f:
+    with open((PROJECT_ROOT / 'exports/Azur Lane EN PvP Guide 2024-10-20.html').resolve(), encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'lxml')
     client = get_client()
     cache = DataCache()
@@ -647,15 +651,15 @@ if '__main__' == __name__:
     pvp_json_dump = partial(json.dump, indent=4, default=to_json_serializable)
 
     equipment = [d for d in cache.alldata if isinstance(d, Equipment)]
-    with open(Path('./_data/equipment.json'), 'w', encoding='utf-8') as f:
+    with open((SITE_SOURCE / '_data/equipment.json'), 'w', encoding='utf-8') as f:
         pvp_json_dump(equipment, f)
         print('Wrote', f.name)
 
     ships = [d for d in cache.alldata if isinstance(d, Ship)]
-    with open(Path('./_data/ships.json'), 'w', encoding='utf-8') as f:
+    with open((SITE_SOURCE / '_data/ships.json'), 'w', encoding='utf-8') as f:
         pvp_json_dump(ships, f)
         print('Wrote', f.name)
 
-    with open(Path('./_data/ship_usage.json'), 'w', encoding='utf-8') as f:
+    with open((SITE_SOURCE / '_data/ship_usage.json'), 'w', encoding='utf-8') as f:
         pvp_json_dump(usages, f)
         print('Wrote', f.name)
