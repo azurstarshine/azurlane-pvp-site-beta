@@ -1,6 +1,6 @@
 ---
-permalink: /
 title: Azur Lane EN PvP Guide
+permalink: /
 ---
 
 
