@@ -154,6 +154,7 @@ class Ship:
     rarity: ShipRarity
     retrofitted: bool
     hull_class: HullClass
+    skin_id: int
 
 
 class EquipmentRarity(Enum):
@@ -328,10 +329,12 @@ PAGE_NAME_FIXES = {
 class DataCache:
     _data_cache: dict[str, AnyData]
     _nicknames: dict[str, set[str]]
+    _ship_skin_data: dict[str, dict]
 
-    def __init__(self):
+    def __init__(self, skin_data: dict[str, dict]):
         self._data_cache = {}
         self._nicknames = defaultdict(set)
+        self._ship_skin_data = skin_data
 
     def _fetch_data(self, page: MediaWikiPage) -> AnyData:
         categories = {c.lower() for c in page.categories}
@@ -383,6 +386,14 @@ class DataCache:
             else:
                 ValueError(f'Unable to determine hull class from multiple categories for {page.title}: {hull_class_cats}'),
 
+            skin_type = 'retrofit' if retrofit else 'default'
+
+            skin = mit.one(
+                [s for s in self._ship_skin_data[str(gid)]['skins'].values() if s['type'].lower() == skin_type],
+                ValueError(f'No {skin_type} skin found for {page.title} ({gid})'),
+                ValueError(f'Multiple {skin_type} skins found for {page.title} ({gid})'),
+            )
+
             return Ship(
                 page.title,
                 gid,
@@ -390,6 +401,7 @@ class DataCache:
                 rarity,
                 retrofit,
                 hull_class,
+                int(skin['id']),
             )
         elif data_type == EQUIPMENT_CATEGORY:
             available_stars = [
@@ -613,8 +625,17 @@ def to_json_serializable(o):
 if '__main__' == __name__:
     with open((PROJECT_ROOT / 'exports/Azur Lane EN PvP Guide 2024-10-20.html').resolve(), encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'lxml')
+
+    skin_data_file = PROJECT_ROOT / 'gamefiles/ship_skin.json'
+
+    if not skin_data_file.is_file():
+        raise Exception('{skin_data_file} does not exist or is not a file. Update gamefiles.')
+
+    with open(skin_data_file, encoding='utf-8') as f:
+        ship_skin_data = json.load(f)
+
     client = get_client()
-    cache = DataCache()
+    cache = DataCache(ship_skin_data)
 
     usages = []
 
