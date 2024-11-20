@@ -1,0 +1,674 @@
+{
+    "Triple 305mm (12\"/50 Mk 8)": {
+        "name": "Triple 305mm (12\"/50 Mk 8)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_305mm_(12%22/50_Mk_8)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 14000
+    },
+    "Twin 410mm (3rd Year Type) Kai": {
+        "name": "Twin 410mm (3rd Year Type) Kai",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_410mm_(3rd_Year_Type)_Kai",
+        "stars": 4,
+        "tech_level": "T0",
+        "image_id": 34300
+    },
+    "Twin 305mm (41st Year Type)": {
+        "name": "Twin 305mm (41st Year Type)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_305mm_(41st_Year_Type)",
+        "stars": 3,
+        "tech_level": "T0",
+        "image_id": 30000
+    },
+    "Drop Tank": {
+        "name": "Drop Tank",
+        "url": "https://azurlane.koumakan.jp/wiki/Drop_Tank#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 2100
+    },
+    "Wirbel Luft": {
+        "name": "Wirbel Luft",
+        "url": "https://azurlane.koumakan.jp/wiki/Wirbel_Luft",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 89480
+    },
+    "Triple 410mm (10th Year Type Prototype)": {
+        "name": "Triple 410mm (10th Year Type Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_410mm_(10th_Year_Type_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 34180
+    },
+    "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)": {
+        "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+        "url": "https://azurlane.koumakan.jp/wiki/533mm_Mark_35_Torpedo_Mount_(Quad_Consecutive_Launch)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 15300
+    },
+    "Fairey Spearfish (Prototype)": {
+        "name": "Fairey Spearfish (Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Fairey_Spearfish_(Prototype)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 28420
+    },
+    "533mm Quintuple Homing Torpedo Mount": {
+        "name": "533mm Quintuple Homing Torpedo Mount",
+        "url": "https://azurlane.koumakan.jp/wiki/533mm_Quintuple_Homing_Torpedo_Mount#Type_3-0",
+        "stars": 6,
+        "tech_level": "T3",
+        "image_id": 45200
+    },
+    "Curtiss SB2C Helldiver": {
+        "name": "Curtiss SB2C Helldiver",
+        "url": "https://azurlane.koumakan.jp/wiki/Curtiss_SB2C_Helldiver#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 19100
+    },
+    "Grumman F7F Tigercat": {
+        "name": "Grumman F7F Tigercat",
+        "url": "https://azurlane.koumakan.jp/wiki/Grumman_F7F_Tigercat",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 17360
+    },
+    "Twin 150mm (TbtsK C/42T Prototype)": {
+        "name": "Twin 150mm (TbtsK C/42T Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_150mm_(TbtsK_C/42T_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 42360
+    },
+    "Single 120mm (QF Mark IX)": {
+        "name": "Single 120mm (QF Mark IX)",
+        "url": "https://azurlane.koumakan.jp/wiki/Single_120mm_(QF_Mark_IX)#Type_3-0",
+        "stars": 3,
+        "tech_level": "T3",
+        "image_id": 21300
+    },
+    "De Havilland Sea Hornet": {
+        "name": "De Havilland Sea Hornet",
+        "url": "https://azurlane.koumakan.jp/wiki/De_Havilland_Sea_Hornet",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 27320
+    },
+    "Type 1 Armor Piercing Shell": {
+        "name": "Type 1 Armor Piercing Shell",
+        "url": "https://azurlane.koumakan.jp/wiki/Type_1_Armor_Piercing_Shell",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 600
+    },
+    "533mm Quintuple Torpedo Mount Mk IX": {
+        "name": "533mm Quintuple Torpedo Mount Mk IX",
+        "url": "https://azurlane.koumakan.jp/wiki/533mm_Quintuple_Torpedo_Mount_Mk_IX",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 25040
+    },
+    "Triple 203mm (SKC Prototype)": {
+        "name": "Triple 203mm (SKC Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_203mm_(SKC_Prototype)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 43160
+    },
+    "Improved Boiler": {
+        "name": "Improved Boiler",
+        "url": "https://azurlane.koumakan.jp/wiki/Improved_Boiler#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 1800
+    },
+    "Cosmic Kicks": {
+        "name": "Cosmic Kicks",
+        "url": "https://azurlane.koumakan.jp/wiki/Cosmic_Kicks",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 89200
+    },
+    "Twin 100mm (Type 98) Kai": {
+        "name": "Twin 100mm (Type 98) Kai",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_100mm_(Type_98)_Kai",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 31080
+    },
+    "Twin 40mm Bofors STAAG": {
+        "name": "Twin 40mm Bofors STAAG",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_40mm_Bofors_STAAG",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 26600
+    },
+    "Prototype Twin 130mm Model 1936 Main Gun Mount": {
+        "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+        "url": "https://azurlane.koumakan.jp/wiki/Prototype_Twin_130mm_Model_1936_Main_Gun_Mount",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 56100
+    },
+    "Grumman F6F Hellcat (HVAR-Mounted)": {
+        "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+        "url": "https://azurlane.koumakan.jp/wiki/Grumman_F6F_Hellcat_(HVAR-Mounted)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 17440
+    },
+    "Anti-Torpedo Bulge": {
+        "name": "Anti-Torpedo Bulge",
+        "url": "https://azurlane.koumakan.jp/wiki/Anti-Torpedo_Bulge#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 1300
+    },
+    "550mm Twin Torpedo Mount": {
+        "name": "550mm Twin Torpedo Mount",
+        "url": "https://azurlane.koumakan.jp/wiki/550mm_Twin_Torpedo_Mount#Type_3-0",
+        "stars": 3,
+        "tech_level": "T3",
+        "image_id": 5300
+    },
+    "Twin 203mm SKC (Improved)": {
+        "name": "Twin 203mm SKC (Improved)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_203mm_SKC_(Improved)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 43080
+    },
+    "Quadruple 40mm Bofors (Mk 2 Mount)": {
+        "name": "Quadruple 40mm Bofors (Mk 2 Mount)",
+        "url": "https://azurlane.koumakan.jp/wiki/Quadruple_40mm_Bofors_(Mk_2_Mount)#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 16400
+    },
+    "Type 93 Pure Oxygen Torpedo": {
+        "name": "Type 93 Pure Oxygen Torpedo",
+        "url": "https://azurlane.koumakan.jp/wiki/Type_93_Pure_Oxygen_Torpedo#Type_3-0",
+        "stars": 6,
+        "tech_level": "T3",
+        "image_id": 2600
+    },
+    "Triple 234mm (BL 9.2\" Mk XII Prototype)": {
+        "name": "Triple 234mm (BL 9.2\" Mk XII Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_234mm_(BL_9.2%22_Mk_XII_Prototype)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 23120
+    },
+    "Triple 381mm (BL 15\" Mk III Prototype)": {
+        "name": "Triple 381mm (BL 15\" Mk III Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_381mm_(BL_15%22_Mk_III_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 24160
+    },
+    "Fairey Swordfish (818 Squadron)": {
+        "name": "Fairey Swordfish (818 Squadron)",
+        "url": "https://azurlane.koumakan.jp/wiki/Fairey_Swordfish_(818_Squadron)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 28060
+    },
+    "Twin 406mm (16\"/56 Mk 4 Prototype)": {
+        "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_406mm_(16%22/56_Mk_4_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 14520
+    },
+    "Fairey Barracuda (831 Squadron)": {
+        "name": "Fairey Barracuda (831 Squadron)",
+        "url": "https://azurlane.koumakan.jp/wiki/Fairey_Barracuda_(831_Squadron)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 29300
+    },
+    "World Expo Commemorative Ticket": {
+        "name": "World Expo Commemorative Ticket",
+        "url": "https://azurlane.koumakan.jp/wiki/World_Expo_Commemorative_Ticket",
+        "stars": 4,
+        "tech_level": "T0",
+        "image_id": 3960
+    },
+    "SG Radar": {
+        "name": "SG Radar",
+        "url": "https://azurlane.koumakan.jp/wiki/SG_Radar#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 1500
+    },
+    "Twin 138.6mm (Mle 1934)": {
+        "name": "Twin 138.6mm (Mle 1934)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_138.6mm_(Mle_1934)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 50160
+    },
+    "Triple 460mm (Type 94)": {
+        "name": "Triple 460mm (Type 94)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_460mm_(Type_94)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 34200
+    },
+    "Eagle Union Elite Damage Control": {
+        "name": "Eagle Union Elite Damage Control",
+        "url": "https://azurlane.koumakan.jp/wiki/Eagle_Union_Elite_Damage_Control",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 840
+    },
+    "100/150 Aviation Gasoline": {
+        "name": "100/150 Aviation Gasoline",
+        "url": "https://azurlane.koumakan.jp/wiki/100/150_Aviation_Gasoline",
+        "stars": 4,
+        "tech_level": "T0",
+        "image_id": 660
+    },
+    "Fire Extinguisher": {
+        "name": "Fire Extinguisher",
+        "url": "https://azurlane.koumakan.jp/wiki/Fire_Extinguisher#Type_3-0",
+        "stars": 3,
+        "tech_level": "T3",
+        "image_id": 2500
+    },
+    "533mm Triple Homing Torpedo Mount": {
+        "name": "533mm Triple Homing Torpedo Mount",
+        "url": "https://azurlane.koumakan.jp/wiki/533mm_Triple_Homing_Torpedo_Mount#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 45000
+    },
+    "Yokosuka Suisei Model 12A": {
+        "name": "Yokosuka Suisei Model 12A",
+        "url": "https://azurlane.koumakan.jp/wiki/Yokosuka_Suisei_Model_12A",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 39160
+    },
+    "Douglas XTB2D-1 Skypirate": {
+        "name": "Douglas XTB2D-1 Skypirate",
+        "url": "https://azurlane.koumakan.jp/wiki/Douglas_XTB2D-1_Skypirate",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 18220
+    },
+    "Twin 57mm Bofors (Mle 1951)": {
+        "name": "Twin 57mm Bofors (Mle 1951)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_57mm_Bofors_(Mle_1951)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 50620
+    },
+    "Triple 283mm (SK C/34)": {
+        "name": "Triple 283mm (SK C/34)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_283mm_(SK_C/34)#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 44000
+    },
+    "Single 150mm (SK C/28)": {
+        "name": "Single 150mm (SK C/28)",
+        "url": "https://azurlane.koumakan.jp/wiki/Single_150mm_(SK_C/28)#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 42000
+    },
+    "Action Report: Operation AF": {
+        "name": "Action Report: Operation AF",
+        "url": "https://azurlane.koumakan.jp/wiki/Action_Report:_Operation_AF",
+        "stars": 4,
+        "tech_level": "T0",
+        "image_id": 940
+    },
+    "Triple 406mm (Mle 1938 Prototype)": {
+        "name": "Triple 406mm (Mle 1938 Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_406mm_(Mle_1938_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 51000
+    },
+    "Improved Hydraulic Rudder": {
+        "name": "Improved Hydraulic Rudder",
+        "url": "https://azurlane.koumakan.jp/wiki/Improved_Hydraulic_Rudder",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 1760
+    },
+    "Twin 137mm (5.4\"/48 Mk 1 Prototype)": {
+        "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_137mm_(5.4%22/48_Mk_1_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 11260
+    },
+    "Triple 152mm (6\"/47 Mk 17 DP Prototype)": {
+        "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_152mm_(6%22/47_Mk_17_DP_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 12200
+    },
+    "Triple 406mm (Mk 6 Prototype)": {
+        "name": "Triple 406mm (Mk 6 Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_406mm_(Mk_6_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 14540
+    },
+    "Washington Naval Treaty": {
+        "name": "Washington Naval Treaty",
+        "url": "https://azurlane.koumakan.jp/wiki/Washington_Naval_Treaty",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 860
+    },
+    "Twin 356mm (41st Year Type) Kai": {
+        "name": "Twin 356mm (41st Year Type) Kai",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_356mm_(41st_Year_Type)_Kai",
+        "stars": 3,
+        "tech_level": "T0",
+        "image_id": 34060
+    },
+    "Br\u00e9guet Br.810": {
+        "name": "Br\u00e9guet Br.810",
+        "url": "https://azurlane.koumakan.jp/wiki/Br%C3%A9guet_Br.810",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 51240
+    },
+    "Single 113mm (QF Mk IV)": {
+        "name": "Single 113mm (QF Mk IV)",
+        "url": "https://azurlane.koumakan.jp/wiki/Single_113mm_(QF_Mk_IV)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 21620
+    },
+    "533mm Quadruple Homing Torpedo Mount": {
+        "name": "533mm Quadruple Homing Torpedo Mount",
+        "url": "https://azurlane.koumakan.jp/wiki/533mm_Quadruple_Homing_Torpedo_Mount#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 45100
+    },
+    "Sextuple 40mm Bofors": {
+        "name": "Sextuple 40mm Bofors",
+        "url": "https://azurlane.koumakan.jp/wiki/Sextuple_40mm_Bofors",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 26660
+    },
+    "Twin 381mm (BL 15\" Mk II)": {
+        "name": "Twin 381mm (BL 15\" Mk II)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_381mm_(BL_15%22_Mk_II)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 24300
+    },
+    "Twin 40mm Bofors Hazemeyer": {
+        "name": "Twin 40mm Bofors Hazemeyer",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_40mm_Bofors_Hazemeyer",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 26620
+    },
+    "Little Beaver Squadron Tag": {
+        "name": "Little Beaver Squadron Tag",
+        "url": "https://azurlane.koumakan.jp/wiki/Little_Beaver_Squadron_Tag",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 500
+    },
+    "Cyanidin Support Towel": {
+        "name": "Cyanidin Support Towel",
+        "url": "https://azurlane.koumakan.jp/wiki/Cyanidin_Support_Towel",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 89780
+    },
+    "Twin 127mm (5\"/38 Mk 38)": {
+        "name": "Twin 127mm (5\"/38 Mk 38)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_127mm_(5%22/38_Mk_38)#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 11200
+    },
+    "Prototype Quadruple 152mm Main Gun Mount": {
+        "name": "Prototype Quadruple 152mm Main Gun Mount",
+        "url": "https://azurlane.koumakan.jp/wiki/Prototype_Quadruple_152mm_Main_Gun_Mount",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 22280
+    },
+    "Angel's Feather": {
+        "name": "Angel's Feather",
+        "url": "https://azurlane.koumakan.jp/wiki/Angel%27s_Feather",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 51260
+    },
+    "High Performance Fire Control Radar": {
+        "name": "High Performance Fire Control Radar",
+        "url": "https://azurlane.koumakan.jp/wiki/High_Performance_Fire_Control_Radar",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 1260
+    },
+    "Vought F4U Corsair (VF-17 Squadron)": {
+        "name": "Vought F4U Corsair (VF-17 Squadron)",
+        "url": "https://azurlane.koumakan.jp/wiki/Vought_F4U_Corsair_(VF-17_Squadron)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 17260
+    },
+    "Douglas A-1 Skyraider": {
+        "name": "Douglas A-1 Skyraider",
+        "url": "https://azurlane.koumakan.jp/wiki/Douglas_A-1_Skyraider",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 19300
+    },
+    "Triple 152mm (BL 6\" Mk XXV Prototype)": {
+        "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_152mm_(BL_6%22_Mk_XXV_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 22260
+    },
+    "Twin 406mm (SK C/34 Prototype)": {
+        "name": "Twin 406mm (SK C/34 Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_406mm_(SK_C/34_Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 44200
+    },
+    "Vought XF5U Flying Flapjack (Prototype)": {
+        "name": "Vought XF5U Flying Flapjack (Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Vought_XF5U_Flying_Flapjack_(Prototype)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 17420
+    },
+    "Admiralty Fire Control Table": {
+        "name": "Admiralty Fire Control Table",
+        "url": "https://azurlane.koumakan.jp/wiki/Admiralty_Fire_Control_Table",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 3580
+    },
+    "\"Fairy Magic\" Poster": {
+        "name": "\"Fairy Magic\" Poster",
+        "url": "https://azurlane.koumakan.jp/wiki/%22Fairy_Magic%22_Poster",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 3840
+    },
+    "Triple 305mm (B-50)": {
+        "name": "Triple 305mm (B-50)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_305mm_(B-50)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 85520
+    },
+    "Westland Wyvern": {
+        "name": "Westland Wyvern",
+        "url": "https://azurlane.koumakan.jp/wiki/Westland_Wyvern",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 28400
+    },
+    "Prototype Triple 203mm/55 Main Gun Mount": {
+        "name": "Prototype Triple 203mm/55 Main Gun Mount",
+        "url": "https://azurlane.koumakan.jp/wiki/Prototype_Triple_203mm/55_Main_Gun_Mount",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 33120
+    },
+    "Pearl Tears": {
+        "name": "Pearl Tears",
+        "url": "https://azurlane.koumakan.jp/wiki/Pearl_Tears",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 520
+    },
+    "Single 76mm (3\"/50 caliber gun)": {
+        "name": "Single 76mm (3\"/50 caliber gun)",
+        "url": "https://azurlane.koumakan.jp/wiki/Single_76mm_(3%22/50_caliber_gun)#Type_3-0",
+        "stars": 3,
+        "tech_level": "T3",
+        "image_id": 11000
+    },
+    "Homing Beacon": {
+        "name": "Homing Beacon",
+        "url": "https://azurlane.koumakan.jp/wiki/Homing_Beacon",
+        "stars": 4,
+        "tech_level": "T0",
+        "image_id": 680
+    },
+    "Goldburn": {
+        "name": "Goldburn",
+        "url": "https://azurlane.koumakan.jp/wiki/Goldburn",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 89400
+    },
+    "Gyroscope": {
+        "name": "Gyroscope",
+        "url": "https://azurlane.koumakan.jp/wiki/Gyroscope#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 2300
+    },
+    "Triple 406mm (16\"/50 Mk 7)": {
+        "name": "Triple 406mm (16\"/50 Mk 7)",
+        "url": "https://azurlane.koumakan.jp/wiki/Triple_406mm_(16%22/50_Mk_7)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 14400
+    },
+    "Twin 130mm (B-2LM)": {
+        "name": "Twin 130mm (B-2LM)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_130mm_(B-2LM)#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 85000
+    },
+    "Curtiss XSB3C (Experimental)": {
+        "name": "Curtiss XSB3C (Experimental)",
+        "url": "https://azurlane.koumakan.jp/wiki/Curtiss_XSB3C_(Experimental)",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 19160
+    },
+    "Twin 135mm (Model 1938)": {
+        "name": "Twin 135mm (Model 1938)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_135mm_(Model_1938)#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 55920
+    },
+    "Twin 128mm/45 SK C/41": {
+        "name": "Twin 128mm/45 SK C/41",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_128mm/45_SK_C/41",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 41160
+    },
+    "550mm Triple Torpedo Mount": {
+        "name": "550mm Triple Torpedo Mount",
+        "url": "https://azurlane.koumakan.jp/wiki/550mm_Triple_Torpedo_Mount#Type_3-0",
+        "stars": 4,
+        "tech_level": "T3",
+        "image_id": 5400
+    },
+    "Super Heavy Shell": {
+        "name": "Super Heavy Shell",
+        "url": "https://azurlane.koumakan.jp/wiki/Super_Heavy_Shell",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 620
+    },
+    "Frontier Medal": {
+        "name": "Frontier Medal",
+        "url": "https://azurlane.koumakan.jp/wiki/Frontier_Medal",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 820
+    },
+    "533mm Magnetic Torpedo": {
+        "name": "533mm Magnetic Torpedo",
+        "url": "https://azurlane.koumakan.jp/wiki/533mm_Magnetic_Torpedo#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 2700
+    },
+    "Nakajima J5N Tenrai (Dive Bomber Prototype)": {
+        "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Nakajima_J5N_Tenrai_(Dive_Bomber_Prototype)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 39340
+    },
+    "Twin 113mm AA (QF Mark I)": {
+        "name": "Twin 113mm AA (QF Mark I)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_113mm_AA_(QF_Mark_I)#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 26500
+    },
+    "Twin 457mm (Mark A Prototype)": {
+        "name": "Twin 457mm (Mark A Prototype)",
+        "url": "https://azurlane.koumakan.jp/wiki/Twin_457mm_(Mark_A_Prototype)",
+        "stars": 6,
+        "tech_level": "T0",
+        "image_id": 14500
+    },
+    "Steam Catapult": {
+        "name": "Steam Catapult",
+        "url": "https://azurlane.koumakan.jp/wiki/Steam_Catapult#Type_3-0",
+        "stars": 5,
+        "tech_level": "T3",
+        "image_id": 1400
+    },
+    "RPG Adventure Interface": {
+        "name": "RPG Adventure Interface",
+        "url": "https://azurlane.koumakan.jp/wiki/RPG_Adventure_Interface",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 150280
+    },
+    "6CRH Armor Piercing Shell": {
+        "name": "6CRH Armor Piercing Shell",
+        "url": "https://azurlane.koumakan.jp/wiki/6CRH_Armor_Piercing_Shell",
+        "stars": 5,
+        "tech_level": "T0",
+        "image_id": 1060
+    }
+}

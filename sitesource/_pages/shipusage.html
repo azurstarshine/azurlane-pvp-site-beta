@@ -1,0 +1,21 @@
+---
+title: Ship Usage
+permalink: /ships/
+---
+
+{% for u in site.data.ship_usage %}
+    <div id="{{u.ship | downcase}}">
+        <h2>{{u.ship}}</h2>
+        <div>{{u.description | markdownify}}</div>
+        <ol>
+            {% for slot in u.equipment %}
+                <label>{{slot[0]}}</label>
+                <ol>
+                    {% for e in slot[1] %}
+                        <li class="{{e.rank | downcase}}">{{e.name}}</li>
+                    {% endfor %}
+                </ol>
+            {% endfor %}
+        </ol>
+    </div>
+{% endfor %}

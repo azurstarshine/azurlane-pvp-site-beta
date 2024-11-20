@@ -1,0 +1,4232 @@
+[
+    {
+        "ship": "Kearsarge",
+        "description": "When used as a solo USS backline option, she is best with HPFCR/AFCR + Manjuu. Most players run her alongside NJ, however, who often already has manjuu. So Kear instead goes for Fairy Magic Poster/SG Radar, WNT (off flag), or Beaver Badge as her second aux item. AvGas can be used in some DPS loadouts but is generally no longer the best option.\n\nKear must use a USS plane to get her buffs to proc. This is usually Flapjack or Tigercat. But VF-17 can be used for timing with CVs. HVAR can sometimes be used against light armoured vanguards but doesn't reveal CVs as consistently. Her gun reload is on the slow side even with an HPFCR, so with a 457 she will fire after NJ and Musashi in most situations.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Vought F4U Corsair (VF-17 Squadron)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Friedrich der Gro\u00dfe",
+        "description": "FdG uses the standard BB loadout, which is composed of:\n\n* Twin 457mm main gun\n* Twin137mm secondary gun (Quad 152mm if flagship)\n* STAAG AA gun\n* AFCR or HPFCR\n* Any EVA/HIT/FP auxiliary.\n\nDue to her low accuracy, FdG prefers Fairy Magic Poster and other high HIT auxes such as SG Radar. In a triple BB comp such as MILF, she may prefer the 406mk4 instead of the 457mm gun for timings, but due to her pendulum-like RLD buffs, this is highly debatable. WNT is used if using her as a flagship or off-flag if you just want the stats. Beaver Badge is good defensively but offers no HIT.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Sovetsky Soyuz",
+        "description": "Soyuz uses the standard BB loadout for most things, but her relatively fast reload makes her often jam with other BBs, especially when using the Twin 457mm gun. In particular, with Musashi/NJ/Soyuz, she will be delayed extensively. Because of this, it is generally preferred to run the Prototype Twin 406Mk4 on her, as being slightly delayed by Musashi is preferable to being delayed nearly a full second by NJ. Some fleets opt to run the purple Triple 283mm gun to get her barrage to proc before Musashi's lightning strikes. But this comes at the cost of giving up a fair bit of her shelling damage.\n\nDue to her faction, she gets extra LCK and invuln from Fairy Magic Poster (mitigates damage to 1 3 times). But other common options such as Beaver Badge, SG Radar, and WNT (Off Flag) are excellent as well.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 283mm (SK C/34)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Alsace",
+        "description": "Alsace's preload makes her able to run a variety of main guns. For nuking enemy vanguards, the 406Mk7 is your best bet. But the Mk6 Prototype deals higher alpha damage in exchange for a noticeably slower reload time. When used alongside Richelieu, the Twin 406mm SK C/34 is superior.\n\nNote that due to her preload being a skill, her actual first salvo is still reduced by HPFCR/AFCR's ability, which makes it mandatory like on most other BBs.\n\nHer lack of defenses are definitely a major factor when fleetbuilding, so it's better to run Beaver on her with WNT on the flagship if you're going for a tankier setup. But going all out DPS with White Shell is also extremely effective due to her preload damage and absolutely devastating against enemy vanguards.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Triple 406mm (16\"/50 Mk 7)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 406mm (Mk 6 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "New Jersey",
+        "description": "Unlike other BBs, NJ's faction allows her to use the Eagle Union Elite Damage Control (also known as Manjuu) instead of an EVA/HIT/FP item to stall fights longer at the cost of occasionally dying early to torps (which you can reset out of anyway). The same behaviour applies to all other USS backline ships such as Kearsarge, Enterprise, and Yorktown II. This is generally her Best In Slot secondary aux item (after AFCR/HPFCR).\n\nFleets that wish to stack AA (such as 2CV fleets) may have NJ equip the Twin 57mm or Sex Bofors AA guns to take advantage of her enormous AA stat. The rest of her loadout works similarly to the standard BB loadout. Do note that she cannot equip CL guns.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 128mm/45 SK C/41",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 130mm (B-2LM)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Vanguard",
+        "description": "Vanguard uses the standard BB loadout, though due to her high RLD stat and debuff skill, it is better for her to fire before any other BBs in your fleet. This usually means she has the Twin 406mm Mk4 gun equipped as opposed to the Twin 457mm gun.\n\nDue to being a Royal Navy ship, she can use Gold Shell as an aux for increased crit damage, but this is usually not common. Most players prefer a defensive setup using either Beaver Badge or WNT as her second aux (after AFCR/HPFCR).\n\nHer auxiliary gun always crits, which makes her incredibly strong with the Quad 152mm gun when used as the flagship. In addition while flagship, she is best off using WNT + AFCR/HPFCR because her debuff skill effectively negates the downsides of WNT.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "6CRH Armor Piercing Shell",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Musashi",
+        "description": "The overwhelming majority of Musashi's damage comes from her lightning barrage, which is enhanced when using a Sakura Empire main gun, so she uses either Mikasa Gun or the Twin 356 Kai in most cases. The Twin 356 Kai deals more damage and can inflict burns due to HE ammo type, but may jam with BBs that use mk4 (such as Soyuz), where Mikasa Gun is better. The barrage's damage scales on FP stat, so she almost always uses a Quad 152mm Aux gun.\n\nMusashi is often the flagship, so her auxiliary loadouts are either AFCR/HPFCR + Beaver Badge in more aggressive fleet comps or AFCR/HPFCR + WNT in tankier stall fleets.\n\nIf using Beaver Badge on the vanguard (such as on Laffey II), she can use Fairy Magic Poster or SG Radar as her second aux item instead.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 305mm (41st Year Type)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 356mm (41st Year Type) Kai",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 410mm (3rd Year Type) Kai",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 410mm (10th Year Type Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Richelieu",
+        "description": "Richelieu's preload skill enables her to use the Triple 406 Mk7 as her main gun, dealing massive burn damage at the beginning of the fight. The rest of her equips follow the standard BB loadout. Due to her high preload damage, White Shell is a very good option in addition to the usual EVA/HIT stacking.\n\nWhen used alongside Alsace in ARSE, she is best off using the Mk6 prototype gun.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Triple 406mm (16\"/50 Mk 7)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 381mm (BL 15\" Mk III Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 406mm (Mk 6 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Vittorio Veneto",
+        "description": "Vittorio Veneto's 90% reload reduction on first salvo effectively gives her preload. Thus, she follows a similar loadout to Richelieu.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Triple 406mm (16\"/50 Mk 7)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 381mm (BL 15\" Mk III Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 406mm (Mk 6 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Warspite",
+        "description": "Warspite Warspoot uses the standard BB loadout.\n\nDue to her snipe skill and low overall HP pool it is often better to equip the White/Gold Shell as opposed to an EVA item, as attempting to keep her alive longer isn't really worth it.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 406mm (Mle 1938 Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "6CRH Armor Piercing Shell",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Tamaki",
+        "description": "Tamaki uses the standard BB loadout.\n\nIn principle her loadout is very similar if not outright identical to FdG's.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Seydlitz",
+        "description": "Seydlitz's pseudo preload skill makes her have one of the most unique setups of any battleship. Her overall HP pool is on the low side so she's best run top or bottom as opposed to flag.\n\nShe is best with either the Triple 460mm gun or the Triple 406 Mk7 HE gun without AFCR/HPFCR, as otherwise she would fire directly into an enemy Anchorage's smokescreen, should she aim at the vanguard. White Shell + WNT (Off Flag) is the best auxiliary setup but if using WNT on your flagship, it is best to put Beaver Badge, Rudder, or Fairy Magic Poster as Seydlitz's 2nd aux item.\n\nIn the specific situation where you don't want to use Seydlitz for preload potential and prefer to run the twin 457 gun or something similar for sustained DPS, the AFCR/HPFCR becomes an excellent option.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Triple 406mm (16\"/50 Mk 7)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 460mm (Type 94)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Super Heavy Shell",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Amagi",
+        "description": "Amagi uses the standard BB loadout.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Nagato",
+        "description": "Nagato uses the standard BB loadout, though some may prefer to put a faster gun on her for an earlier barrage.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Twin 381mm (BL 15\" Mk II)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "South Dakota",
+        "description": "South Dakota's loadout is identical to New Jersey's.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 457mm (Mark A Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 406mm (16\"/56 Mk 4 Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 406mm (SK C/34 Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Twin 137mm (5.4\"/48 Mk 1 Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 128mm/45 SK C/41",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 130mm (B-2LM)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Admiralty Fire Control Table",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "High Performance Fire Control Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Type 1 Armor Piercing Shell",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "SG Radar",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Aquila",
+        "description": "Aquila uses the standard CV loadout, consisting of:\n* Flapjack or Sea Hornet\n* Tenrai\n* Wyvern\n* AvGas + Angel's Feather/WNT (Off Flag)/Fairy Magic Poster/Catapult\n\nIn particular, AvGas is a must-have for all CVs because it boosts both the flight speed and maximum health of all launched planes. Accept no alternatives. While Drop Tank does give a similar HP buff, it lacks the plane speed buff. Frontier Medal can be used if she is the flagship in a 2CV or 3CV fleet.\n\nHVAR + Skyraider + Spearfish can be used for anti-vanguard setups, but to mixed results. Due to her preload, 818 can be used to potentially slow enemy vanguards.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Curtiss XSB3C (Experimental)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Curtiss SB2C Helldiver",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Douglas A-1 Skyraider",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Swordfish (818 Squadron)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Hiryuu",
+        "description": "Hiryuu often uses the standard CV loadout but has a lot of flexible options.\n\nWhen used in fleets with multiple CVs, she can use Frontier Medal as her second auxiliary in the flag position instead of Angel's Feather. In HYMEN, she is best used in the off flag position with Angel's Feather or Fairy Magic Poster. Some players insist on running her in the flag position with WNT, though this is less effective than it used to be since the onset of the torpedo meta.\n\nCatapult can be used as a substitute for Angel's Feather if you do not have it or Fairy Magic Poster.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Curtiss XSB3C (Experimental)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Curtiss SB2C Helldiver",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Douglas A-1 Skyraider",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Swordfish (818 Squadron)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Shinano",
+        "description": "Unlike most CVs, Shinano's ability to use a Torpedo Bomber in her first slot gives her a very strange plane loadout consisting of Wyvern - Suisei Kai - Wyvern. Similar loadouts using double Breguet or Wyvern + Breguet are also common. If using Tenrai, she must use a fast fighter (such as VF-17) or risk being sunk before she can even launch.\n\nAn anti-light setup using HVAR + Skyraider + Spearfish or Spearfish + Skyraider + Spearfish is possible, but certainly not recommended in the current meta.\n\nHer auxiliary slots follow the standard CV loadout, but some players have used Beacon on her to speed up airstrikes.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Vought F4U Corsair (VF-17 Squadron)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Yokosuka Suisei Model 12A",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Fairey Barracuda (831 Squadron)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Douglas A-1 Skyraider",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Homing Beacon",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Enterprise",
+        "description": "Enterprise follows the standard CV loadout, though some people use Manjuu on her. This may not always be good as she is invincible during Lucky E and if Manjuu procs just before Lucky E does, she will sink while she is invincible. Enterprise can also be rammed to death during Lucky E.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Curtiss XSB3C (Experimental)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Curtiss SB2C Helldiver",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Douglas A-1 Skyraider",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Independence",
+        "description": "Independence benefits greatly from Eagle Union gear, so her plane selection is a bit different from most CVs. Wyvern is still her best Torpedo Bomber, however. Her aux gear is the same as that of the standard CV loadout. Like all Eagle Union ships, she can equip manjuu.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Vought F4U Corsair (VF-17 Squadron)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Douglas XTB2D-1 Skypirate",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Perseus",
+        "description": "Perseus uses the standard CV loadout. However she usually equips a STAAG AA gun due to having no dive bomber slot. In a CV-heavy matchup, the Twin 57mm AA gun or the Sex Bofors are better options.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Swordfish (818 Squadron)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Chise Asukagawa",
+        "description": "Chise uses the exact same loadout as Aquila.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Curtiss XSB3C (Experimental)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Curtiss SB2C Helldiver",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Douglas A-1 Skyraider",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Swordfish (818 Squadron)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Unicorn",
+        "description": "Unicorn uses the exact same loadout as Perseus.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Swordfish (818 Squadron)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Akagi",
+        "description": "Akagi uses the standard CV loadout.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Curtiss XSB3C (Experimental)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Curtiss SB2C Helldiver",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Douglas A-1 Skyraider",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Kaga",
+        "description": "Kaga uses the standard CV loadout.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Curtiss XSB3C (Experimental)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Curtiss SB2C Helldiver",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Douglas A-1 Skyraider",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Essex",
+        "description": "Essex uses the exact same loadout as Enterprise.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Vought XF5U Flying Flapjack (Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "De Havilland Sea Hornet",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Grumman F7F Tigercat",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Grumman F6F Hellcat (HVAR-Mounted)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Nakajima J5N Tenrai (Dive Bomber Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Curtiss XSB3C (Experimental)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Curtiss SB2C Helldiver",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Douglas A-1 Skyraider",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Westland Wyvern",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Br\u00e9guet Br.810",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fairey Spearfish (Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "100/150 Aviation Gasoline",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Angel's Feather",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "\"Fairy Magic\" Poster",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Frontier Medal",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Drop Tank",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Steam Catapult",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Washington Naval Treaty",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Anchorage",
+        "description": "Anchorage's strange choice of torpedo is to make sure her smokescreen triggers at the appropriate time. For example, the 550mm Twin torpedo mount launches very quickly, allowing her to block incoming shelling damage from enemy BBs.\n\nWhen used as Main Tank, she is best using the Hindenburg gun due to likely never living long enough to fire a second shot, preferring AP to pierce through the multiple enemy vanguard ships. If used in the Off Tank position against torp comps, it is better to use the Unzen gun as its raw DPS against light armour is significantly higher.\n\nDue to the torpedo meta, Anchorage no longer prefers Manjuu and is best off with either Bulge + Kicks or Boiler + Kicks.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Triple 203mm (SKC Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 234mm (BL 9.2\" Mk XII Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 203mm SKC (Improved)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Prototype Triple 203mm/55 Main Gun Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "550mm Twin Torpedo Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Triple Homing Torpedo Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "550mm Triple Torpedo Mount",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Anti-Torpedo Bulge",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Hydraulic Rudder",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Unzen",
+        "description": "Unzen is usually run in the off-tank or mid position as there are much better tank options (Anchorage, Jintsuu META, etc.) and is usually best off running Tea Torps with a Black Torp aux, which locks in her first aux item.\n\nHer extremely low base SPD warrants compensation, however, and is really her main bottleneck in PvP. When in the mid position she could use pearl as well but likely at the cost of speed or damage.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Triple 203mm (SKC Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 234mm (BL 9.2\" Mk XII Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 203mm SKC (Improved)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Prototype Triple 203mm/55 Main Gun Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Improved Boiler",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Hydraulic Rudder",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Laffey II",
+        "description": "Laffey II requires at least 1 USS gear item to trigger her AA buff. While this can be in any slot (such as torpedo, gun, etc.) it is generally now accepted that Manjuu is her Best in Slot item, unless you are using New Jersey or another USS backline unit.\n\nGenerally a speed item is her best second auxiliary, though many other options exist due to her extreme flexibility. Fire Extinguisher may be useful in a matchup against double HE (such as Richelieu + Alsace) but comes at the cost of losing speed, and Laffey II's base speed is incredibly low for a DD.\n\nYou should never use Pearl Tears on her, as she will outlive pretty much everything else in a fight and thus not trigger its healing at a useful time.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 138.6mm (Mle 1934)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 127mm (5\"/38 Mk 38)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Quadruple 40mm Bofors (Mk 2 Mount)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "World Expo Commemorative Ticket",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Action Report: Operation AF",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fire Extinguisher",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Eldridge",
+        "description": "Elridge (Retrofit) is generally pretty squishy when she's not invulnerable, so will die pretty much instantly the moment she comes out of her evasion skill. Thus, Pearl is a must have on her unless you have a squishier unit in your vanguard (such as Shimakaze). An HP item such as Cyanidin Towel is also an excellent second item.\n\nSpeed items can be used if she is used alongside slower units (such as CAs). Manjuu is generally not great on her since she cannot trigger Operation Rainbow while invulnerable. But if she is your only USS vanguard ship, then it is still a good choice for extra stalling power.\n\nA fast DD gun is recommended on her due to her massive barrage.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Single 113mm (QF Mk IV)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Single 120mm (QF Mark IX)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Quadruple 40mm Bofors (Mk 2 Mount)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Pearl Tears",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "World Expo Commemorative Ticket",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Fortune META",
+        "description": "Fortune META is usually used in the off-tank position, so she prefers auxes with high HP to compensate for her absolutely miniscule eHP pool. RPG Interface + Pearl is generally her best loadout in most situations, though if you are already using RPG Interface or Pearl on another vanguard unit, Cyanidin Support Towel is an excellent substitute. Wirbel Luft, Boilers, and Expo Ticket are also good speed items if you are running a slower vanguard. Aggressive vanguards may try to use Black Torp to boost her torpedo damage, though this is rare in the current meta.\n\nDespite her high FP, she is best off using a fast gun to spam her AoA barrage slashes in order to counter enemy torpedoes. Tea Torps or 533 Mk35s are her best torpedo options. Goldburn marginally increases her RLD which may be worth using if you do not want to use Cyanidin Towel or RPG Interface on her.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Single 113mm (QF Mk IV)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Single 120mm (QF Mark IX)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Single 76mm (3\"/50 caliber gun)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "World Expo Commemorative Ticket",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Shimakaze",
+        "description": "Tea Torps + Black Torp Aux are the Best in Slot option for most ships with a torpedo slot. The 533mm USS mags have a similar firing pattern and tracking but deal less damage and launch 1 less torpedo. In some situations or setups, the rainbow Quint Mags may be used instead alongside Oxy Torp aux.\n\nFor Shimakaze specifically, Pearl Tears is a must-have for her aux gear. Putting 2 torp auxes on her is not recommended.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Single 113mm (QF Mk IV)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Single 120mm (QF Mark IX)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Single 76mm (3\"/50 caliber gun)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Type 93 Pure Oxygen Torpedo",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "World Expo Commemorative Ticket",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Ayanami",
+        "description": "Tea Torps + Black Torp Aux are the Best in Slot option for most ships with a torpedo slot. The 533mm USS mags have a similar firing pattern and tracking but deal less damage and launch 1 less torpedo. In some situations or setups, the rainbow Quint Mags may be used instead.\n\nAyanami's ideal gear setup is pretty much a carbon copy of Shimakaze's.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Single 113mm (QF Mk IV)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Single 120mm (QF Mark IX)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Single 76mm (3\"/50 caliber gun)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Type 93 Pure Oxygen Torpedo",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "World Expo Commemorative Ticket",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Yukikaze",
+        "description": "Unlike the other IJN DDs on this list, Yukikaze's extremely high eHP enables players to run her with a full tank loadout instead. Due to this, she prefers the rainbow Quint Mags since there is no room for a Black Torp in her aux setup, though the quad mags and mk35 USS torps also work fine.\n\nThe Fire Extinguisher was popular on her back when HE damage was more common. Nowadays it's a situational equip and it's better to just stack HP items on her such as RPG Interface, Cyanidin Support Towel, Goldburn, etc. See the Gear Breakdown section for more details.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Single 113mm (QF Mk IV)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Single 120mm (QF Mark IX)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Single 76mm (3\"/50 caliber gun)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Quadruple 40mm Bofors (Mk 2 Mount)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Fire Extinguisher",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "World Expo Commemorative Ticket",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Naganami",
+        "description": "Tea Torps + Black Torp Aux are the Best in Slot option for most ships with a torpedo slot. The 533mm USS mags have a similar firing pattern and tracking but deal less damage and launch 1 less torpedo. In some situations or setups, the rainbow Quint Mags may be used instead.\n\nNaganami, like Ayanami, is best off with the same equip setup as Shimakaze.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Single 113mm (QF Mk IV)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Single 120mm (QF Mark IX)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Single 76mm (3\"/50 caliber gun)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Type 93 Pure Oxygen Torpedo",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "World Expo Commemorative Ticket",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Felix Schultz",
+        "description": "Unlike other DDs, Felix is extremely gun-focused due to her relatively low TRP stat and unique ability to use a CL gun. Some setups opt to use the Single 150mm CL gun to trigger her All Out Assault barrage more often.\n\nHer extremely high eHP pool makes her suitable to be used in the off-tank position so she often stacks HP items to outlive her enemies, especially due to her hefty +30% aux stat modifier. Due to being a DD, however, she cannot equip the torp bulge.\n\nPearl is generally not great on her due to how late into a fight she dies. But if you have nowhere else to put it, go ahead.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 150mm (TbtsK C/42T Prototype)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Single 150mm (SK C/28)",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "World Expo Commemorative Ticket",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Jintsuu META",
+        "description": "Jintsuu META is usually used in the tank slot and due to her invulnerability skill + double torpedo launch on \"death\", a full damage loadout is actually excellent on her, though more conservative players may simply run her with a Black Torp + Speed/health aux item instead.\n\nSome comps may choose to run her with a tankier loadout, preferring a single torp aux (such as black torp) + Cyanidin Support Towel/Goldburn/RPG Interface or Cosmic Kicks. \n\nPearl Tears may be used in some niche loadouts to take advantage of her sinking skill or if she is being run in the middle position, but the item is generally better on squishy DDs like Shimakaze/Fortune META or on Juneau instead.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Type 93 Pure Oxygen Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Harbin",
+        "description": "Tea Torps + Black Torp Aux are the Best in Slot option for most ships with a torpedo slot. The 533mm USS mags have a similar firing pattern and tracking but deal less damage and launch 1 less torpedo. In some situations or setups, the rainbow Quint Mags may be used instead.\n\nHarbin tends to be used in the Off Tank position, where her best options are Black Torp + Bulge. But she has many flexible options for her second aux item, especially if you do not need the torpedo protection (due to Fortune META, etc.) Pearl can be used on her if she is being used in the Mid position as a substitute for Shimakaze.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 138.6mm (Mle 1934)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 135mm (Model 1938)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Anti-Torpedo Bulge",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Juneau",
+        "description": "Juneau's eHP must be carefully balanced in order for her to maximize healing potential. This will depend greatly on whether you use WNT and what position you have her in (Main Tank, Mid, or Off Tank).\n\nHer speed is on the low side, so Speed Items such as Boilers, Wirbel Luft, Cosmic Kicks, and Gyro are very useful to offset this disadvantage. Manjuu can be used to delay her heals and/or death in order to further stall a battle, but is usually better used on the backline or Laffey II.\n\nPearl Tears + Beaver Badge is BiS on her if using Standard vg comp with Alsace, otherwise go Pearl Tears + Any Speed Item. Bulge + Pearl Tears is good if she is leading. If she is off-tank while your Pearl Tears is on Shimakaze, she can use Bulge + any HP item instead (such as Goldburn and Cyanidin Towel) to stagger heals.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 138.6mm (Mle 1934)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 135mm (Model 1938)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 113mm AA (QF Mark I)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Pearl Tears",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Gyroscope",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Anti-Torpedo Bulge",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Noshiro",
+        "description": "Tea Torps + Black Torp Aux are the Best in Slot option for most ships with a torpedo slot. The 533mm USS mags have a similar firing pattern and tracking but deal less damage and launch 1 less torpedo. In some situations or setups, the rainbow Quint Mags may be used instead.\n\nAfter the arrival of JintM, Noshiro is generally only used as an off-tank unit. So she follows a loadout very similar to Harbin's, albeit with a CL gun instead of a DD gun.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Single 150mm (SK C/28)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Anti-Torpedo Bulge",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Duca degli Abruzzi",
+        "description": "Duca prefers magnetic torpedoes due to her unique skill, so she follows a loadout very similar to Harbin and Noshiro but with the Oxy Torpedo aux instead of the Black Torp.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Type 93 Pure Oxygen Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Anti-Torpedo Bulge",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Seattle",
+        "description": "Double gun is generally better than double AA, though there are situations where double AA may be necessary. Speed and evasion items are generally best on her. Manjuu can be used if you do not run Anchorage or any USS backline units.\n\nPearl may be used on her if you only have tankier units in the vanguard (such as Laffey II and Anchorage).",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 113mm AA (QF Mark I)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Birmingham",
+        "description": "Birmingham builds similarly to Seattle but with a DD gun in her second weapon slot instead of another CL gun.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Twin 130mm (B-2LM)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 135mm (Model 1938)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 113mm AA (QF Mark I)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Helena",
+        "description": "Helena works pretty similarly to how she does in PvE. Cosmic Kicks + Manjuu is generally her best aux setup, but there are a large variety of strong options such as RPG Interface, Cyanidin Support Towel, Rudder, etc.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "Twin 130mm (B-2LM)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 135mm (Model 1938)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "VIABLE"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 113mm AA (QF Mark I)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Hydraulic Rudder",
+                    "rank": "VIABLE"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "San Diego",
+        "description": "What's a plane?",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Twin 138.6mm (Mle 1934)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 100mm (Type 98) Kai",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 135mm (Model 1938)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 113mm AA (QF Mark I)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                },
+                {
+                    "name": "Little Beaver Squadron Tag",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Improved Boiler",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Eagle Union Elite Damage Control",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Leipzig",
+        "description": "Leipzig follows an identical setup to Noshiro.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Anti-Torpedo Bulge",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    },
+    {
+        "ship": "Sendai",
+        "description": "Sendai Kai follows an identical setup to Noshiro.",
+        "equipment": {
+            "1": [
+                {
+                    "name": "Prototype Quadruple 152mm Main Gun Mount",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Triple 152mm (6\"/47 Mk 17 DP Prototype)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Triple 152mm (BL 6\" Mk XXV Prototype)",
+                    "rank": "VIABLE"
+                }
+            ],
+            "2": [
+                {
+                    "name": "533mm Quintuple Torpedo Mount Mk IX",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quadruple Homing Torpedo Mount",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "533mm Quintuple Homing Torpedo Mount",
+                    "rank": "SITUATIONAL"
+                }
+            ],
+            "3": [
+                {
+                    "name": "Sextuple 40mm Bofors",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 57mm Bofors (Mle 1951)",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors STAAG",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Twin 40mm Bofors Hazemeyer",
+                    "rank": "VIABLE"
+                }
+            ],
+            "aux": [
+                {
+                    "name": "533mm Magnetic Torpedo",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Anti-Torpedo Bulge",
+                    "rank": "OPTIMAL"
+                },
+                {
+                    "name": "Wirbel Luft",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cosmic Kicks",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Goldburn",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Cyanidin Support Towel",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "RPG Adventure Interface",
+                    "rank": "VIABLE"
+                },
+                {
+                    "name": "Pearl Tears",
+                    "rank": "SITUATIONAL"
+                }
+            ]
+        }
+    }
+]

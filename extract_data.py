@@ -678,6 +678,8 @@ if '__main__' == __name__:
 
     data_by_types = mit.bucket(cache.alldata, lambda d: type(d).__name__.lower())
     for t in data_by_types:
-        write_pvp_json_data((SITE_SOURCE / f'_data/{t}.json'), list(data_by_types[t]))
+        data = {d.name: d for d in data_by_types[t]}
+
+        write_pvp_json_data((SITE_SOURCE / f'_data/{t}.json'), data)
 
     write_pvp_json_data((SITE_SOURCE / '_data/ship_usage.json'), usages)
