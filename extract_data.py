@@ -574,6 +574,8 @@ def parse_equip_table(
                         # Using the parsed JSON from data-sheets-value preserves all newlines
                         # and other characters the HTML escapes without having to transform it back.
                         current_usage.description = parsed_value['2']
+                        # Convert manual bullets to Markdown list
+                        current_usage.description.replace('\u2022', '*')
                         print(rownum, colnum, 'Description:', current_usage.desc_preview)
                     elif not cell.text:
                         # Check this last to avoid accidentally missing other possibilities
