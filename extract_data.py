@@ -9,12 +9,12 @@ from datetime import timedelta
 import enum
 from enum import Enum
 from functools import total_ordering
-from functools import partial
 import json
 from pathlib import Path
 import re
 from time import sleep
 from types import MappingProxyType
+from typing import Any
 from urllib.parse import urlparse
 from urllib.parse import unquote as urlunquote
 import warnings
@@ -622,6 +622,12 @@ def to_json_serializable(o):
     raise TypeError(f'Cannot serialize {o} {type(o).__name__})')
 
 
+def write_pvp_json_data(path: Path, data: Any):
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, default=to_json_serializable)
+        print('Wrote', f.name)
+
+
 if '__main__' == __name__:
     with open((PROJECT_ROOT / 'exports/Azur Lane EN PvP Guide 2024-10-20.html').resolve(), encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'lxml')
@@ -668,19 +674,8 @@ if '__main__' == __name__:
     for u in usages:
         print(u)
 
+    data_by_types = mit.bucket(cache.alldata, lambda d: type(d).__name__.lower())
+    for t in data_by_types:
+        write_pvp_json_data((SITE_SOURCE / f'_data/{t}.json'), list(data_by_types[t]))
 
-    pvp_json_dump = partial(json.dump, indent=4, default=to_json_serializable)
-
-    equipment = [d for d in cache.alldata if isinstance(d, Equipment)]
-    with open((SITE_SOURCE / '_data/equipment.json'), 'w', encoding='utf-8') as f:
-        pvp_json_dump(equipment, f)
-        print('Wrote', f.name)
-
-    ships = [d for d in cache.alldata if isinstance(d, Ship)]
-    with open((SITE_SOURCE / '_data/ships.json'), 'w', encoding='utf-8') as f:
-        pvp_json_dump(ships, f)
-        print('Wrote', f.name)
-
-    with open((SITE_SOURCE / '_data/ship_usage.json'), 'w', encoding='utf-8') as f:
-        pvp_json_dump(usages, f)
-        print('Wrote', f.name)
+    write_pvp_json_data((SITE_SOURCE / '_data/ship_usage.json'), usages)
