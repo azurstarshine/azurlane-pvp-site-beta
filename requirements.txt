@@ -1,4 +1,6 @@
-pymediawiki
-more-itertools
 beautifulsoup4
+GitPython
+invoke
 lxml
+more-itertools
+pymediawiki
