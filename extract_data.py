@@ -498,7 +498,7 @@ class DataCache:
 
     @property
     def alldata(self) -> Collection[AnyData]:
-        return self._data_cache.values()
+        return set(self._data_cache.values())
 
     @property
     def nicknames(self) -> MappingProxyType[str, set[str]]:
