@@ -1,6 +1,4 @@
 main:
-  - title: "Home"
-    url: /
   - title: Changelog
     url: /changelog/
   - title: Ship Usage

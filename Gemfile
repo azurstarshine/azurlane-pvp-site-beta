@@ -15,4 +15,4 @@ gem "ostruct", "~> 0.6.0"
 gem "logger", "~> 1.6"
 gem "base64", "~> 0.2.0"
 
-gem "alembic-jekyll-theme", "~> 4.1"
+gem "minimal-mistakes-jekyll", "~> 4.26"

@@ -1,12 +1,18 @@
-theme: alembic-jekyll-theme
-
 source: sitesource
+
+theme: minimal-mistakes-jekyll
 
 include: ["_pages", "assets"]
 
+title: "Azur Lane EN PVP Guide"
+
+minimal_mistakes_skin: "air"
+
 defaults:
+  # _pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: page
+      layout: single
+      classes: wide
