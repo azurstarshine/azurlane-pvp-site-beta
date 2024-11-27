@@ -13,11 +13,12 @@ from git.repo.fun import is_git_dir
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
+SITE_SOURCE = PROJECT_ROOT / 'sitesource'
 
 GAMEFILES_DIR = PROJECT_ROOT / 'gamefiles'
 IMAGE_REPO_URL = r'https://github.com/Fernando2603/AzurLane.git'
 
-PVP_SHIP_FILE = PROJECT_ROOT / '_data/ships.json'
+PVP_SHIP_FILE = SITE_SOURCE / '_data/ship.json'
 
 
 def exec_gamefiles_git(ctx, command):
@@ -71,21 +72,42 @@ def initgamefiles(ctx):
         print(f'{GAMEFILES_DIR.name} clone already set up')
 
 
+def try_extract_skin_id(s):
+    if not isinstance(s, dict):
+        return None
+
+    skin_id = s.get('skin_id')
+
+    if not isinstance(skin_id, int):
+        return None
+
+    return skin_id
+
+
 @task(initgamefiles)
 def updategamefiles(ctx):
     print(f'Updating {GAMEFILES_DIR.name} clone')
+    # Equipment directory is relatively small, so we can just include to whole thing.
     filedirs = ['images/equipment/']
 
     # Just keep going if there's any problem loading skin data from ships
     if PVP_SHIP_FILE.is_file():
         with open(PVP_SHIP_FILE, encoding='utf-8') as f:
-            for s in json.load(f):
-                if (
-                    isinstance(s, dict)
-                    and (skin_id := s.get('skin_id'))
-                    and isinstance(skin_id, int)
-                ):
-                    filedirs.append(f'images/skins/{skin_id}/')
+            try:
+                ship_data = json.load(f)
+                if not isinstance(ship_data, dict):
+                    raise NotImplementedError(f'ship_data is a {type(ship_data)}; expected dict')
+            except:
+                print(f'Malformed {PVP_SHIP_FILE.name}. Skipping skin IDs.')
+            else:
+                # Only runs on successful try block
+                for name, ship in ship_data.items():
+                    if skin_id := try_extract_skin_id(ship):
+                        filedirs.append(f'images/skins/{skin_id}/')
+                    else:
+                        print('Malformed ship or missing skin_id: {name}. Skipping skin_id.')
+    else:
+        print(f'{PVP_SHIP_FILE.name} not found')
 
     ctxgit = partial(exec_gamefiles_git, ctx)
 
