@@ -235,13 +235,21 @@ class Equipment:
 AnyData = Ship | Equipment
 
 
+@total_ordering
 class EquipmentRank(Enum):
-    OPTIMAL = ('#5AD766')
-    VIABLE = ('#FFCE32')
-    SITUATIONAL = ('#E02F2F')
+    OPTIMAL = ('#5AD766', 1)
+    VIABLE = ('#FFCE32', 2)
+    SITUATIONAL = ('#E02F2F', 3)
 
-    def __init__(self, bgcolor):
+    def __init__(self, bgcolor, numeric):
         self.bgcolor = bgcolor.lower()
+        self.numeric = numeric
+
+    def __lt__(self, other):
+        if type(self) is not type(other):
+            return NotImplemented
+
+        return self.numeric < other.numeric
 
     def __str__(self):
         return self.name
@@ -269,6 +277,10 @@ class ShipUsage:
     ship: Ship
     description: str | None = None
     slots: dict[int | str, Sequence[EquipWithRank]] = field(default_factory=lambda: defaultdict(list))
+
+    def sort_slots(self):
+        for s in self.slots.values():
+            s.sort(key=lambda ewr: ewr.rank)
 
     def validate(self):
         if not self.ship:
@@ -536,6 +548,7 @@ def parse_equip_table(
 
                     if isinstance(page_data, Ship):
                         if current_usage:
+                            current_usage.sort_slots()
                             current_usage.validate()
                             usages.append(current_usage)
                             print('Completed ship equip', current_usage)
