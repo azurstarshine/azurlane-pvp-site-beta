@@ -112,8 +112,8 @@ def updategamefiles(ctx):
     ctxgit = partial(exec_gamefiles_git, ctx)
 
     ctxgit('sparse-checkout set ' + ' '.join(filedirs))
-    ctxgit('fetch')
-    ctxgit('checkout')
+    ctxgit('fetch --filter=blob:none')
+    ctxgit('reset --hard origin/main')
 
 
 @task(cleangamefiles, updategamefiles)
