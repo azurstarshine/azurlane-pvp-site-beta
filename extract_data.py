@@ -608,13 +608,7 @@ def parse_equip_table(
                 # Skip over current ship
                 current_usage = None
 
-    if failures:
-        print('Failed to load:')
-        for f in failures:
-            print(*f)
-        input('Press enter to continue')
-
-    return usages
+    return usages, failures
 
 
 def to_json_serializable(o):
@@ -659,10 +653,13 @@ if '__main__' == __name__:
     cache = DataCache(ship_skin_data)
 
     usages = []
+    failures = []
 
     for table_name in ['table4', 'table5']:
         table_element = soup.find('a', {'name': table_name}).find_next('table')
-        usages.extend(parse_equip_table(table_element, client, cache))
+        cur_uses, cur_fails = parse_equip_table(table_element, client, cache)
+        usages.extend(cur_uses)
+        failures.extend((table_name, *f) for f in cur_fails)
 
     print()
 
@@ -683,11 +680,10 @@ if '__main__' == __name__:
         if len(names) > 1:
             print('{nickname}: ' + ','.join(names))
 
-
-    print()
-    print('Equipment loadouts:')
-    for u in usages:
-        print(u)
+    if failures:
+        print('Failed to load:')
+        for f in failures:
+            print(*f)
 
     data_by_types = mit.bucket(cache.alldata, lambda d: type(d).__name__.lower())
     for t in data_by_types:
