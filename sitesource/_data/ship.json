@@ -1,85 +1,4 @@
 {
-    "Sendai": {
-        "name": "Sendai",
-        "gid": 30212,
-        "url": "https://azurlane.koumakan.jp/wiki/Sendai",
-        "rarity": "E",
-        "retrofitted": true,
-        "hull_class": "CL",
-        "skin_id": 302129
-    },
-    "Hiryuu": {
-        "name": "Hiryuu",
-        "gid": 30704,
-        "url": "https://azurlane.koumakan.jp/wiki/Hiryuu",
-        "rarity": "SR",
-        "retrofitted": true,
-        "hull_class": "CV",
-        "skin_id": 307049
-    },
-    "Yukikaze": {
-        "name": "Yukikaze",
-        "gid": 30116,
-        "url": "https://azurlane.koumakan.jp/wiki/Yukikaze",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "DD",
-        "skin_id": 301160
-    },
-    "Laffey II": {
-        "name": "Laffey II",
-        "gid": 10151,
-        "url": "https://azurlane.koumakan.jp/wiki/Laffey_II",
-        "rarity": "UR",
-        "retrofitted": false,
-        "hull_class": "DD",
-        "skin_id": 101510
-    },
-    "South Dakota": {
-        "name": "South Dakota",
-        "gid": 10514,
-        "url": "https://azurlane.koumakan.jp/wiki/South_Dakota",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "BB",
-        "skin_id": 105140
-    },
-    "Shimakaze": {
-        "name": "Shimakaze",
-        "gid": 30129,
-        "url": "https://azurlane.koumakan.jp/wiki/Shimakaze",
-        "rarity": "UR",
-        "retrofitted": false,
-        "hull_class": "DD",
-        "skin_id": 301290
-    },
-    "Amagi": {
-        "name": "Amagi",
-        "gid": 30405,
-        "url": "https://azurlane.koumakan.jp/wiki/Amagi",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "BC",
-        "skin_id": 304050
-    },
-    "Juneau": {
-        "name": "Juneau",
-        "gid": 10207,
-        "url": "https://azurlane.koumakan.jp/wiki/Juneau",
-        "rarity": "E",
-        "retrofitted": true,
-        "hull_class": "CL",
-        "skin_id": 102079
-    },
-    "Unicorn": {
-        "name": "Unicorn",
-        "gid": 20603,
-        "url": "https://azurlane.koumakan.jp/wiki/Unicorn",
-        "rarity": "SR",
-        "retrofitted": true,
-        "hull_class": "CVL",
-        "skin_id": 206039
-    },
     "Akagi": {
         "name": "Akagi",
         "gid": 30701,
@@ -88,51 +7,6 @@
         "retrofitted": false,
         "hull_class": "CV",
         "skin_id": 307010
-    },
-    "\u00c4gir": {
-        "name": "\u00c4gir",
-        "gid": 49905,
-        "url": "https://azurlane.koumakan.jp/wiki/%C3%84gir",
-        "rarity": "DR",
-        "retrofitted": false,
-        "hull_class": "CB",
-        "skin_id": 499050
-    },
-    "Anchorage": {
-        "name": "Anchorage",
-        "gid": 19903,
-        "url": "https://azurlane.koumakan.jp/wiki/Anchorage",
-        "rarity": "PR",
-        "retrofitted": false,
-        "hull_class": "CA",
-        "skin_id": 199030
-    },
-    "Felix Schultz": {
-        "name": "Felix Schultz",
-        "gid": 49908,
-        "url": "https://azurlane.koumakan.jp/wiki/Felix_Schultz",
-        "rarity": "PR",
-        "retrofitted": false,
-        "hull_class": "DD",
-        "skin_id": 499080
-    },
-    "Musashi": {
-        "name": "Musashi",
-        "gid": 30510,
-        "url": "https://azurlane.koumakan.jp/wiki/Musashi",
-        "rarity": "UR",
-        "retrofitted": false,
-        "hull_class": "BB",
-        "skin_id": 305100
-    },
-    "Aquila": {
-        "name": "Aquila",
-        "gid": 60701,
-        "url": "https://azurlane.koumakan.jp/wiki/Aquila",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "CV",
-        "skin_id": 607010
     },
     "Alsace": {
         "name": "Alsace",
@@ -143,6 +17,33 @@
         "hull_class": "BB",
         "skin_id": 805030
     },
+    "Amagi": {
+        "name": "Amagi",
+        "gid": 30405,
+        "url": "https://azurlane.koumakan.jp/wiki/Amagi",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "BC",
+        "skin_id": 304050
+    },
+    "Anchorage": {
+        "name": "Anchorage",
+        "gid": 19903,
+        "url": "https://azurlane.koumakan.jp/wiki/Anchorage",
+        "rarity": "PR",
+        "retrofitted": false,
+        "hull_class": "CA",
+        "skin_id": 199030
+    },
+    "Aquila": {
+        "name": "Aquila",
+        "gid": 60701,
+        "url": "https://azurlane.koumakan.jp/wiki/Aquila",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "CV",
+        "skin_id": 607010
+    },
     "Ayanami": {
         "name": "Ayanami",
         "gid": 30105,
@@ -151,42 +52,6 @@
         "retrofitted": true,
         "hull_class": "DD",
         "skin_id": 301059
-    },
-    "Harbin": {
-        "name": "Harbin",
-        "gid": 59901,
-        "url": "https://azurlane.koumakan.jp/wiki/Harbin",
-        "rarity": "PR",
-        "retrofitted": false,
-        "hull_class": "CL",
-        "skin_id": 599010
-    },
-    "Duca degli Abruzzi": {
-        "name": "Duca degli Abruzzi",
-        "gid": 60201,
-        "url": "https://azurlane.koumakan.jp/wiki/Duca_degli_Abruzzi",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "CL",
-        "skin_id": 602010
-    },
-    "Leipzig": {
-        "name": "Leipzig",
-        "gid": 40204,
-        "url": "https://azurlane.koumakan.jp/wiki/Leipzig",
-        "rarity": "E",
-        "retrofitted": true,
-        "hull_class": "CL",
-        "skin_id": 402049
-    },
-    "Tamaki": {
-        "name": "Tamaki",
-        "gid": 1060009,
-        "url": "https://azurlane.koumakan.jp/wiki/Tamaki",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "BC",
-        "skin_id": 10600090
     },
     "Birmingham": {
         "name": "Birmingham",
@@ -197,131 +62,23 @@
         "hull_class": "CL",
         "skin_id": 102230
     },
-    "Unzen": {
-        "name": "Unzen",
-        "gid": 30319,
-        "url": "https://azurlane.koumakan.jp/wiki/Unzen",
-        "rarity": "UR",
-        "retrofitted": false,
-        "hull_class": "CA",
-        "skin_id": 303190
-    },
-    "Yorktown II": {
-        "name": "Yorktown II",
-        "gid": 10710,
-        "url": "https://azurlane.koumakan.jp/wiki/Yorktown_II",
-        "rarity": "UR",
+    "Chise Asukagawa": {
+        "name": "Chise Asukagawa",
+        "gid": 1080006,
+        "url": "https://azurlane.koumakan.jp/wiki/Chise_Asukagawa",
+        "rarity": "SR",
         "retrofitted": false,
         "hull_class": "CV",
-        "skin_id": 107100
+        "skin_id": 10800060
     },
-    "Shinano": {
-        "name": "Shinano",
-        "gid": 30708,
-        "url": "https://azurlane.koumakan.jp/wiki/Shinano",
-        "rarity": "UR",
-        "retrofitted": false,
-        "hull_class": "CV",
-        "skin_id": 307080
-    },
-    "Noshiro": {
-        "name": "Noshiro",
-        "gid": 30221,
-        "url": "https://azurlane.koumakan.jp/wiki/Noshiro",
+    "Duca degli Abruzzi": {
+        "name": "Duca degli Abruzzi",
+        "gid": 60201,
+        "url": "https://azurlane.koumakan.jp/wiki/Duca_degli_Abruzzi",
         "rarity": "SR",
         "retrofitted": false,
         "hull_class": "CL",
-        "skin_id": 302210
-    },
-    "Nagato": {
-        "name": "Nagato",
-        "gid": 30505,
-        "url": "https://azurlane.koumakan.jp/wiki/Nagato",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "BB",
-        "skin_id": 305050
-    },
-    "Jintsuu": {
-        "name": "Jintsuu",
-        "gid": 30213,
-        "url": "https://azurlane.koumakan.jp/wiki/Jintsuu",
-        "rarity": "SR",
-        "retrofitted": true,
-        "hull_class": "CL",
-        "skin_id": 302139
-    },
-    "Independence": {
-        "name": "Independence",
-        "gid": 10722,
-        "url": "https://azurlane.koumakan.jp/wiki/Independence",
-        "rarity": "SR",
-        "retrofitted": true,
-        "hull_class": "CVL",
-        "skin_id": 107229
-    },
-    "San Diego": {
-        "name": "San Diego",
-        "gid": 10208,
-        "url": "https://azurlane.koumakan.jp/wiki/San_Diego",
-        "rarity": "UR",
-        "retrofitted": true,
-        "hull_class": "CL",
-        "skin_id": 102089
-    },
-    "Vittorio Veneto": {
-        "name": "Vittorio Veneto",
-        "gid": 60501,
-        "url": "https://azurlane.koumakan.jp/wiki/Vittorio_Veneto",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "BB",
-        "skin_id": 605010
-    },
-    "Essex": {
-        "name": "Essex",
-        "gid": 10709,
-        "url": "https://azurlane.koumakan.jp/wiki/Essex",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "CV",
-        "skin_id": 107090
-    },
-    "Seydlitz": {
-        "name": "Seydlitz",
-        "gid": 40403,
-        "url": "https://azurlane.koumakan.jp/wiki/Seydlitz",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "BC",
-        "skin_id": 404030
-    },
-    "Kearsarge": {
-        "name": "Kearsarge",
-        "gid": 19904,
-        "url": "https://azurlane.koumakan.jp/wiki/Kearsarge",
-        "rarity": "DR",
-        "retrofitted": false,
-        "hull_class": "BBV",
-        "skin_id": 199040
-    },
-    "Kaga": {
-        "name": "Kaga",
-        "gid": 30702,
-        "url": "https://azurlane.koumakan.jp/wiki/Kaga",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "CV",
-        "skin_id": 307020
-    },
-    "Warspite": {
-        "name": "Warspite",
-        "gid": 20502,
-        "url": "https://azurlane.koumakan.jp/wiki/Warspite",
-        "rarity": "UR",
-        "retrofitted": true,
-        "hull_class": "BB",
-        "skin_id": 205029
+        "skin_id": 602010
     },
     "Eldridge": {
         "name": "Eldridge",
@@ -332,86 +89,32 @@
         "hull_class": "DD",
         "skin_id": 101269
     },
-    "New Jersey": {
-        "name": "New Jersey",
-        "gid": 10517,
-        "url": "https://azurlane.koumakan.jp/wiki/New_Jersey",
-        "rarity": "UR",
-        "retrofitted": false,
-        "hull_class": "BB",
-        "skin_id": 105170
-    },
-    "Jintsuu META": {
-        "name": "Jintsuu META",
-        "gid": 970205,
-        "url": "https://azurlane.koumakan.jp/wiki/Jintsuu_META",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "CL",
-        "skin_id": 9702050
-    },
-    "Sovetsky Soyuz": {
-        "name": "Sovetsky Soyuz",
-        "gid": 70502,
-        "url": "https://azurlane.koumakan.jp/wiki/Sovetsky_Soyuz",
-        "rarity": "UR",
-        "retrofitted": false,
-        "hull_class": "BB",
-        "skin_id": 705020
-    },
-    "Helena": {
-        "name": "Helena",
-        "gid": 10205,
-        "url": "https://azurlane.koumakan.jp/wiki/Helena",
-        "rarity": "SR",
-        "retrofitted": true,
-        "hull_class": "CL",
-        "skin_id": 102059
-    },
-    "Vanguard": {
-        "name": "Vanguard",
-        "gid": 20513,
-        "url": "https://azurlane.koumakan.jp/wiki/Vanguard",
-        "rarity": "UR",
-        "retrofitted": false,
-        "hull_class": "BB",
-        "skin_id": 205130
-    },
-    "Perseus": {
-        "name": "Perseus",
-        "gid": 20606,
-        "url": "https://azurlane.koumakan.jp/wiki/Perseus",
-        "rarity": "SR",
-        "retrofitted": false,
-        "hull_class": "CVL",
-        "skin_id": 206060
-    },
-    "Chise Asukagawa": {
-        "name": "Chise Asukagawa",
-        "gid": 1080006,
-        "url": "https://azurlane.koumakan.jp/wiki/Chise_Asukagawa",
+    "Enterprise": {
+        "name": "Enterprise",
+        "gid": 10706,
+        "url": "https://azurlane.koumakan.jp/wiki/Enterprise",
         "rarity": "SR",
         "retrofitted": false,
         "hull_class": "CV",
-        "skin_id": 10800060
+        "skin_id": 107060
     },
-    "Friedrich der Gro\u00dfe": {
-        "name": "Friedrich der Gro\u00dfe",
-        "gid": 49902,
-        "url": "https://azurlane.koumakan.jp/wiki/Friedrich_der_Gro%C3%9Fe",
-        "rarity": "DR",
+    "Essex": {
+        "name": "Essex",
+        "gid": 10709,
+        "url": "https://azurlane.koumakan.jp/wiki/Essex",
+        "rarity": "SR",
         "retrofitted": false,
-        "hull_class": "BB",
-        "skin_id": 499020
+        "hull_class": "CV",
+        "skin_id": 107090
     },
-    "Seattle": {
-        "name": "Seattle",
-        "gid": 19901,
-        "url": "https://azurlane.koumakan.jp/wiki/Seattle",
+    "Felix Schultz": {
+        "name": "Felix Schultz",
+        "gid": 49908,
+        "url": "https://azurlane.koumakan.jp/wiki/Felix_Schultz",
         "rarity": "PR",
         "retrofitted": false,
-        "hull_class": "CL",
-        "skin_id": 199010
+        "hull_class": "DD",
+        "skin_id": 499080
     },
     "Fortune META": {
         "name": "Fortune META",
@@ -422,14 +125,122 @@
         "hull_class": "DD",
         "skin_id": 9701020
     },
-    "Richelieu": {
-        "name": "Richelieu",
-        "gid": 80501,
-        "url": "https://azurlane.koumakan.jp/wiki/Richelieu",
-        "rarity": "SR",
+    "Friedrich der Gro\u00dfe": {
+        "name": "Friedrich der Gro\u00dfe",
+        "gid": 49902,
+        "url": "https://azurlane.koumakan.jp/wiki/Friedrich_der_Gro%C3%9Fe",
+        "rarity": "DR",
         "retrofitted": false,
         "hull_class": "BB",
-        "skin_id": 805010
+        "skin_id": 499020
+    },
+    "Harbin": {
+        "name": "Harbin",
+        "gid": 59901,
+        "url": "https://azurlane.koumakan.jp/wiki/Harbin",
+        "rarity": "PR",
+        "retrofitted": false,
+        "hull_class": "CL",
+        "skin_id": 599010
+    },
+    "Helena": {
+        "name": "Helena",
+        "gid": 10205,
+        "url": "https://azurlane.koumakan.jp/wiki/Helena",
+        "rarity": "SR",
+        "retrofitted": true,
+        "hull_class": "CL",
+        "skin_id": 102059
+    },
+    "Hiryuu": {
+        "name": "Hiryuu",
+        "gid": 30704,
+        "url": "https://azurlane.koumakan.jp/wiki/Hiryuu",
+        "rarity": "SR",
+        "retrofitted": true,
+        "hull_class": "CV",
+        "skin_id": 307049
+    },
+    "Independence": {
+        "name": "Independence",
+        "gid": 10722,
+        "url": "https://azurlane.koumakan.jp/wiki/Independence",
+        "rarity": "SR",
+        "retrofitted": true,
+        "hull_class": "CVL",
+        "skin_id": 107229
+    },
+    "Jintsuu": {
+        "name": "Jintsuu",
+        "gid": 30213,
+        "url": "https://azurlane.koumakan.jp/wiki/Jintsuu",
+        "rarity": "SR",
+        "retrofitted": true,
+        "hull_class": "CL",
+        "skin_id": 302139
+    },
+    "Jintsuu META": {
+        "name": "Jintsuu META",
+        "gid": 970205,
+        "url": "https://azurlane.koumakan.jp/wiki/Jintsuu_META",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "CL",
+        "skin_id": 9702050
+    },
+    "Juneau": {
+        "name": "Juneau",
+        "gid": 10207,
+        "url": "https://azurlane.koumakan.jp/wiki/Juneau",
+        "rarity": "E",
+        "retrofitted": true,
+        "hull_class": "CL",
+        "skin_id": 102079
+    },
+    "Kaga": {
+        "name": "Kaga",
+        "gid": 30702,
+        "url": "https://azurlane.koumakan.jp/wiki/Kaga",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "CV",
+        "skin_id": 307020
+    },
+    "Kearsarge": {
+        "name": "Kearsarge",
+        "gid": 19904,
+        "url": "https://azurlane.koumakan.jp/wiki/Kearsarge",
+        "rarity": "DR",
+        "retrofitted": false,
+        "hull_class": "BBV",
+        "skin_id": 199040
+    },
+    "Laffey II": {
+        "name": "Laffey II",
+        "gid": 10151,
+        "url": "https://azurlane.koumakan.jp/wiki/Laffey_II",
+        "rarity": "UR",
+        "retrofitted": false,
+        "hull_class": "DD",
+        "skin_id": 101510
+    },
+    "Leipzig": {
+        "name": "Leipzig",
+        "gid": 40204,
+        "url": "https://azurlane.koumakan.jp/wiki/Leipzig",
+        "rarity": "E",
+        "retrofitted": true,
+        "hull_class": "CL",
+        "skin_id": 402049
+    },
+    "Musashi": {
+        "name": "Musashi",
+        "gid": 30510,
+        "url": "https://azurlane.koumakan.jp/wiki/Musashi",
+        "rarity": "UR",
+        "retrofitted": false,
+        "hull_class": "BB",
+        "skin_id": 305100
     },
     "Naganami": {
         "name": "Naganami",
@@ -440,13 +251,202 @@
         "hull_class": "DD",
         "skin_id": 301830
     },
-    "Enterprise": {
-        "name": "Enterprise",
-        "gid": 10706,
-        "url": "https://azurlane.koumakan.jp/wiki/Enterprise",
+    "Nagato": {
+        "name": "Nagato",
+        "gid": 30505,
+        "url": "https://azurlane.koumakan.jp/wiki/Nagato",
         "rarity": "SR",
         "retrofitted": false,
+        "hull_class": "BB",
+        "skin_id": 305050
+    },
+    "New Jersey": {
+        "name": "New Jersey",
+        "gid": 10517,
+        "url": "https://azurlane.koumakan.jp/wiki/New_Jersey",
+        "rarity": "UR",
+        "retrofitted": false,
+        "hull_class": "BB",
+        "skin_id": 105170
+    },
+    "Noshiro": {
+        "name": "Noshiro",
+        "gid": 30221,
+        "url": "https://azurlane.koumakan.jp/wiki/Noshiro",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "CL",
+        "skin_id": 302210
+    },
+    "Perseus": {
+        "name": "Perseus",
+        "gid": 20606,
+        "url": "https://azurlane.koumakan.jp/wiki/Perseus",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "CVL",
+        "skin_id": 206060
+    },
+    "Richelieu": {
+        "name": "Richelieu",
+        "gid": 80501,
+        "url": "https://azurlane.koumakan.jp/wiki/Richelieu",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "BB",
+        "skin_id": 805010
+    },
+    "San Diego": {
+        "name": "San Diego",
+        "gid": 10208,
+        "url": "https://azurlane.koumakan.jp/wiki/San_Diego",
+        "rarity": "UR",
+        "retrofitted": true,
+        "hull_class": "CL",
+        "skin_id": 102089
+    },
+    "Seattle": {
+        "name": "Seattle",
+        "gid": 19901,
+        "url": "https://azurlane.koumakan.jp/wiki/Seattle",
+        "rarity": "PR",
+        "retrofitted": false,
+        "hull_class": "CL",
+        "skin_id": 199010
+    },
+    "Sendai": {
+        "name": "Sendai",
+        "gid": 30212,
+        "url": "https://azurlane.koumakan.jp/wiki/Sendai",
+        "rarity": "E",
+        "retrofitted": true,
+        "hull_class": "CL",
+        "skin_id": 302129
+    },
+    "Seydlitz": {
+        "name": "Seydlitz",
+        "gid": 40403,
+        "url": "https://azurlane.koumakan.jp/wiki/Seydlitz",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "BC",
+        "skin_id": 404030
+    },
+    "Shimakaze": {
+        "name": "Shimakaze",
+        "gid": 30129,
+        "url": "https://azurlane.koumakan.jp/wiki/Shimakaze",
+        "rarity": "UR",
+        "retrofitted": false,
+        "hull_class": "DD",
+        "skin_id": 301290
+    },
+    "Shinano": {
+        "name": "Shinano",
+        "gid": 30708,
+        "url": "https://azurlane.koumakan.jp/wiki/Shinano",
+        "rarity": "UR",
+        "retrofitted": false,
         "hull_class": "CV",
-        "skin_id": 107060
+        "skin_id": 307080
+    },
+    "South Dakota": {
+        "name": "South Dakota",
+        "gid": 10514,
+        "url": "https://azurlane.koumakan.jp/wiki/South_Dakota",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "BB",
+        "skin_id": 105140
+    },
+    "Sovetsky Soyuz": {
+        "name": "Sovetsky Soyuz",
+        "gid": 70502,
+        "url": "https://azurlane.koumakan.jp/wiki/Sovetsky_Soyuz",
+        "rarity": "UR",
+        "retrofitted": false,
+        "hull_class": "BB",
+        "skin_id": 705020
+    },
+    "Tamaki": {
+        "name": "Tamaki",
+        "gid": 1060009,
+        "url": "https://azurlane.koumakan.jp/wiki/Tamaki",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "BC",
+        "skin_id": 10600090
+    },
+    "Unicorn": {
+        "name": "Unicorn",
+        "gid": 20603,
+        "url": "https://azurlane.koumakan.jp/wiki/Unicorn",
+        "rarity": "SR",
+        "retrofitted": true,
+        "hull_class": "CVL",
+        "skin_id": 206039
+    },
+    "Unzen": {
+        "name": "Unzen",
+        "gid": 30319,
+        "url": "https://azurlane.koumakan.jp/wiki/Unzen",
+        "rarity": "UR",
+        "retrofitted": false,
+        "hull_class": "CA",
+        "skin_id": 303190
+    },
+    "Vanguard": {
+        "name": "Vanguard",
+        "gid": 20513,
+        "url": "https://azurlane.koumakan.jp/wiki/Vanguard",
+        "rarity": "UR",
+        "retrofitted": false,
+        "hull_class": "BB",
+        "skin_id": 205130
+    },
+    "Vittorio Veneto": {
+        "name": "Vittorio Veneto",
+        "gid": 60501,
+        "url": "https://azurlane.koumakan.jp/wiki/Vittorio_Veneto",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "BB",
+        "skin_id": 605010
+    },
+    "Warspite": {
+        "name": "Warspite",
+        "gid": 20502,
+        "url": "https://azurlane.koumakan.jp/wiki/Warspite",
+        "rarity": "UR",
+        "retrofitted": true,
+        "hull_class": "BB",
+        "skin_id": 205029
+    },
+    "Yorktown II": {
+        "name": "Yorktown II",
+        "gid": 10710,
+        "url": "https://azurlane.koumakan.jp/wiki/Yorktown_II",
+        "rarity": "UR",
+        "retrofitted": false,
+        "hull_class": "CV",
+        "skin_id": 107100
+    },
+    "Yukikaze": {
+        "name": "Yukikaze",
+        "gid": 30116,
+        "url": "https://azurlane.koumakan.jp/wiki/Yukikaze",
+        "rarity": "SR",
+        "retrofitted": false,
+        "hull_class": "DD",
+        "skin_id": 301160
+    },
+    "\u00c4gir": {
+        "name": "\u00c4gir",
+        "gid": 49905,
+        "url": "https://azurlane.koumakan.jp/wiki/%C3%84gir",
+        "rarity": "DR",
+        "retrofitted": false,
+        "hull_class": "CB",
+        "skin_id": 499050
     }
 }

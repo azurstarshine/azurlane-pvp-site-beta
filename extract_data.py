@@ -10,6 +10,7 @@ import enum
 from enum import Enum
 from functools import total_ordering
 import json
+from operator import attrgetter
 from pathlib import Path
 import re
 from time import sleep
@@ -686,10 +687,13 @@ if '__main__' == __name__:
         for f in failures:
             print(*f)
 
-    data_by_types = mit.bucket(cache.alldata, lambda d: type(d).__name__.lower())
-    for t in data_by_types:
-        data = {d.name: d for d in data_by_types[t]}
-
+    data_by_types = mit.map_reduce(
+        cache.alldata,
+        keyfunc=lambda d: type(d).__name__.lower(),
+        # Ensure output is sorted to minimize diffs
+        reducefunc=lambda data: {d.name: d for d in sorted(data, key=attrgetter('name'))}
+    )
+    for t, data in data_by_types.items():
         write_pvp_json_data((SITE_SOURCE / f'_data/{t}.json'), data)
 
     write_pvp_json_data((SITE_SOURCE / '_data/ship_usage.json'), usages)
