@@ -682,10 +682,9 @@ if '__main__' == __name__:
         if len(names) > 1:
             print('{nickname}: ' + ','.join(names))
 
-    if failures:
-        print('Failed to load:')
-        for f in failures:
-            print(*f)
+    print('Failed to load:')
+    for f in failures:
+        print(*f)
 
     data_by_types = mit.map_reduce(
         cache.alldata,
