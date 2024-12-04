@@ -144,7 +144,8 @@ def parse_equip_table(
                             current_usage.sort_slots()
                             current_usage.validate()
                             usages.append(current_usage)
-                            print('Completed ship equip', current_usage)
+                            print('Completed ship usage', current_usage)
+                            sleep(1)
 
                         current_usage = ShipUsage(page_data)
                         print()
