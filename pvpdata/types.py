@@ -3,7 +3,6 @@ Data types for data represented in the site's files.
 """
 
 from collections import defaultdict
-import dataclasses
 from dataclasses import dataclass
 from dataclasses import field
 import enum
@@ -279,23 +278,3 @@ class ShipUsage:
         ])
 
         return f'{type(self).__name__}({data_repr})'
-
-
-def to_json_serializable(o):
-    if isinstance(o, EquipWithRank):
-        return {'name': o.equip.name, 'rank': str(o.rank)}
-
-    if isinstance(o, ShipUsage):
-        return {
-            'ship': o.ship.name,
-            'description': o.description,
-            'equipment': o.slots,
-        }
-
-    if dataclasses.is_dataclass(o):
-        return dataclasses.asdict(o)
-
-    if isinstance(o, Enum):
-        return o.name
-
-    raise TypeError(f'Cannot serialize {o} {type(o).__name__})')
