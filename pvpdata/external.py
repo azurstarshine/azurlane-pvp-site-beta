@@ -26,7 +26,17 @@ SHIP_RARITY_BY_CATEGORY = {r.long_name.lower() + ' ships': r for r in ShipRarity
 
 RETROFIT_CATEGORY = 'ships with retrofit'
 
-HULL_CLASS_BY_CATEGORY = {hc.category_name: hc for hc in HullClass}
+def hull_class_category_name(hc: HullClass):
+    name, *clarifier = hc.long_name.lower().split('(', 1)
+    cat_name = name.rstrip() + 's'
+
+    if clarifier:
+        cat_name += ' (' + ''.join(clarifier)
+
+    return cat_name
+
+
+HULL_CLASS_BY_CATEGORY = {hull_class_category_name(hc): hc for hc in HullClass}
 
 ExternalData = Ship | Equipment
 

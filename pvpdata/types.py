@@ -66,34 +66,27 @@ class ShipRarity(Enum):
 
 
 class HullClass(Enum):
-    CV  = ('Aircraft carrier')
-    CVL = ('Light aircraft carrier')
-    BBV = ('Aviation battleship')
-    BC  = ('Battlecruiser')
-    BB  = ('Battleship')
-    DD  = ('Destroyer')
-    CA  = ('Heavy cruiser')
-    CB  = ('Large cruiser')
-    CL  = ('Light cruiser')
-    BM  = ('Monitor')
-    AE  = ('Munition ship')
-    AR  = ('Repair ship')
-    IXs = ('Sailing Frigate (Submarine)', 'Sailing Frigates (Submarine)')
-    IXv = ('Sailing Frigate (Vanguard)', 'Sailing Frigates (Vanguard)')
-    IXm = ('Sailing Frigate (Main)', 'Sailing Frigates (Main)')
-    SS  = ('Submarine')
-    SSV = ('Submarine carrier')
+    CV  = 'Aircraft carrier'
+    CVL = 'Light aircraft carrier'
+    BBV = 'Aviation battleship'
+    BC  = 'Battlecruiser'
+    BB  = 'Battleship'
+    DD  = 'Destroyer'
+    CA  = 'Heavy cruiser'
+    CB  = 'Large cruiser'
+    CL  = 'Light cruiser'
+    BM  = 'Monitor'
+    AE  = 'Munition ship'
+    AR  = 'Repair ship'
+    IXs = 'Sailing Frigate (Submarine)'
+    IXv = 'Sailing Frigate (Vanguard)'
+    IXm = 'Sailing Frigate (Main)'
+    SS  = 'Submarine'
+    SSV = 'Submarine carrier'
 
-    def __init__(self, long_name, cat_name=None):
-        if not cat_name:
-            cat_name = long_name + 's'
-        cat_name = cat_name.lower()
-
+    def __init__(self, long_name):
         self.code = self.name
         self.long_name = long_name
-
-        # TODO: Move to wiki module
-        self.category_name = cat_name
 
     @classmethod
     def find_by_long_name(cls, search_name):
