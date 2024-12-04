@@ -11,51 +11,52 @@ from invoke.exceptions import Exit
 from git.util import rmtree as git_rmtree
 from git.repo.fun import is_git_dir
 
+import pvpdata
+from pvpdata import GAME_RESOURCES_DIR
+from pvpdata import PROJECT_ROOT
+from pvpdata import SITE_SOURCE
+from pvpdata.types import Ship
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-SITE_SOURCE = PROJECT_ROOT / 'sitesource'
 
-GAMEFILES_DIR = PROJECT_ROOT / 'gamefiles'
-IMAGE_REPO_URL = r'https://github.com/Fernando2603/AzurLane.git'
-
-PVP_SHIP_FILE = SITE_SOURCE / '_data/ship.json'
+RESOURCE_REPO_URL = r'https://github.com/Fernando2603/AzurLane.git'
+PVP_SHIP_FILE = pvpdata.get_data_path(Ship)
 
 
 def exec_gamefiles_git(ctx, command):
-    with ctx.cd(GAMEFILES_DIR):
+    with ctx.cd(GAME_RESOURCES_DIR):
         return ctx.run('git ' + command, echo=True)
 
 
 @task
 def cleangamefiles(ctx):
-    if GAMEFILES_DIR.is_dir():
+    if GAME_RESOURCES_DIR.is_dir():
         with ctx.cd(PROJECT_ROOT):
             # Must use special function because Git applies some attributes
             # that prevent normal deletion from working.
-            print(f'Deleting {GAMEFILES_DIR.name}', end=' ')
+            print(f'Deleting {GAME_RESOURCES_DIR.name}', end=' ')
             if not ctx.config.run.dry:
                 print('...', end=' ')
-                git_rmtree(GAMEFILES_DIR)
+                git_rmtree(GAME_RESOURCES_DIR)
                 print('Complete')
             else:
                 print('(dry)')
     else:
-        print(f'{GAMEFILES_DIR.name} did not exist or is not a directory')
+        print(f'{GAME_RESOURCES_DIR.name} did not exist or is not a directory')
 
 
 @task
 def initgamefiles(ctx):
-    print(f'Ensuring {GAMEFILES_DIR.name} clone is initialized')
-    if not GAMEFILES_DIR.exists():
-        print(f'Creating {GAMEFILES_DIR.name}')
+    print(f'Ensuring {GAME_RESOURCES_DIR.name} clone is initialized')
+    if not GAME_RESOURCES_DIR.exists():
+        print(f'Creating {GAME_RESOURCES_DIR.name}')
         if not ctx.config.run.dry:
-            GAMEFILES_DIR.mkdir()
-    elif not GAMEFILES_DIR.is_dir():
-        raise Exit(f'Cannot create repository at {GAMEFILES_DIR}: not a directory.')
+            GAME_RESOURCES_DIR.mkdir()
+    elif not GAME_RESOURCES_DIR.is_dir():
+        raise Exit(f'Cannot create repository at {GAME_RESOURCES_DIR}: not a directory.')
 
-    if not is_git_dir(GAMEFILES_DIR / '.git'):
-        if any(GAMEFILES_DIR.iterdir()):
-            raise Exit(f'Cannot create repository at {GAMEFILES_DIR}: not an empty directory.')
+    if not is_git_dir(GAME_RESOURCES_DIR / '.git'):
+        if any(GAME_RESOURCES_DIR.iterdir()):
+            raise Exit(f'Cannot create repository at {GAME_RESOURCES_DIR}: not an empty directory.')
 
         ctxgit = partial(exec_gamefiles_git, ctx)
 
@@ -63,13 +64,13 @@ def initgamefiles(ctx):
         # --no-checkout prevents immediate full checkout, which would download everything.
         # --depth=1 prevents fetching full history. We only need recent commits.
         # --filter=blob:none delays downloading of file content until they are checked out to disk.
-        ctxgit(f'clone --no-checkout --depth=1 --filter=blob:none {IMAGE_REPO_URL} .')
+        ctxgit(f'clone --no-checkout --depth=1 --filter=blob:none {RESOURCE_REPO_URL} .')
         # Initially checkout only files at root, which includes JSON data files
         ctxgit('sparse-checkout init')
         ctxgit('checkout')
-        print(f'Set up {GAMEFILES_DIR.name} with sparse checkout and shallow clone')
+        print(f'Set up {GAME_RESOURCES_DIR.name} with sparse checkout and shallow clone')
     else:
-        print(f'{GAMEFILES_DIR.name} clone already set up')
+        print(f'{GAME_RESOURCES_DIR.name} clone already set up')
 
 
 def try_extract_skin_id(s):
@@ -86,7 +87,7 @@ def try_extract_skin_id(s):
 
 @task(initgamefiles)
 def updategamefiles(ctx):
-    print(f'Updating {GAMEFILES_DIR.name} clone')
+    print(f'Updating {GAME_RESOURCES_DIR.name} clone')
     # Equipment directory is relatively small, so we can just include to whole thing.
     filedirs = ['images/equipment/']
 

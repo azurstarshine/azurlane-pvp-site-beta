@@ -11,3 +11,5 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SITE_SOURCE = PROJECT_ROOT / 'sitesource'
+DATA_DIR = SITE_SOURCE / '_data'
+GAME_RESOURCES_DIR = PROJECT_ROOT / 'gamefiles'

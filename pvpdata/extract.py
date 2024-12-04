@@ -14,16 +14,17 @@ from mediawiki import MediaWiki
 from mediawiki import MediaWikiPage
 import more_itertools as mit
 
+from . import GAME_RESOURCES_DIR
 from . import PROJECT_ROOT
-from . import SITE_SOURCE
-from .external import ExternalData
 from .external import DATA_TYPE_CATEGORIES
 from .external import EQUIPMENT_CATEGORY
+from .external import ExternalData
 from .external import HULL_CLASS_BY_CATEGORY
 from .external import RETROFIT_CATEGORY
 from .external import SHIP_CATEGORY
 from .external import SHIP_RARITY_BY_CATEGORY
 from .external import get_client
+from .sitefiles import get_data_path
 from .sitefiles import write_pvp_json_data
 from .types import EQUIP_RANK_BY_COLOR
 from .types import EQUIP_RARITY_BY_STARS
@@ -316,10 +317,10 @@ def main():
     with open((PROJECT_ROOT / 'exports/Azur Lane EN PvP Guide 2024-10-20.html').resolve(), encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'lxml')
 
-    skin_data_file = PROJECT_ROOT / 'gamefiles/ship_skin.json'
+    skin_data_file = GAME_RESOURCES_DIR / 'ship_skin.json'
 
     if not skin_data_file.is_file():
-        raise Exception('{skin_data_file} does not exist or is not a file. Update gamefiles.')
+        raise Exception(f'{skin_data_file} does not exist or is not a file. Update gamefiles.')
 
     with open(skin_data_file, encoding='utf-8') as f:
         ship_skin_data = json.load(f)
@@ -361,14 +362,14 @@ def main():
 
     data_by_types = mit.map_reduce(
         cache.alldata,
-        keyfunc=lambda d: type(d).__name__.lower(),
+        keyfunc=type,
         # Ensure output is sorted to minimize diffs
         reducefunc=lambda data: {d.name: d for d in sorted(data, key=attrgetter('name'))}
     )
     for t, data in data_by_types.items():
-        write_pvp_json_data((SITE_SOURCE / f'_data/{t}.json'), data)
+        write_pvp_json_data(get_data_path(t), data)
 
-    write_pvp_json_data((SITE_SOURCE / '_data/ship_usage.json'), usages)
+    write_pvp_json_data(get_data_path(type(usages[0])), usages)
 
 
 if '__main__' == __name__:
