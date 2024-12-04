@@ -4,16 +4,18 @@ the wiki and the resources repository.
 """
 
 from datetime import timedelta
+import json
 
 from mediawiki import MediaWiki
 
+from . import GAME_RESOURCES_DIR
 from .types import Equipment
 from .types import Ship
 from .types import ShipRarity
 from .types import HullClass
 
 
-def get_client() -> MediaWiki:
+def get_wiki_client() -> MediaWiki:
     return MediaWiki(
         'https://azurlane.koumakan.jp/w/api.php',
         rate_limit=True,
@@ -44,3 +46,13 @@ EQUIPMENT_CATEGORY = 'equipment'
 SHIP_CATEGORY = 'ships'
 
 DATA_TYPE_CATEGORIES = {EQUIPMENT_CATEGORY, SHIP_CATEGORY}
+
+
+def load_skin_data():
+    skin_data_path = GAME_RESOURCES_DIR / 'ship_skin.json'
+
+    if not skin_data_path.is_file():
+        raise Exception(f'{skin_data_path} does not exist or is not a file. Update gamefiles.')
+
+    with open(skin_data_path, encoding='utf-8') as f:
+        return json.load(f)

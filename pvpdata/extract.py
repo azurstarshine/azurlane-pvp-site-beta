@@ -23,7 +23,6 @@ from mediawiki import MediaWiki
 from mediawiki import MediaWikiPage
 import more_itertools as mit
 
-from . import GAME_RESOURCES_DIR
 from . import PROJECT_ROOT
 from .external import DATA_TYPE_CATEGORIES
 from .external import EQUIPMENT_CATEGORY
@@ -32,7 +31,8 @@ from .external import HULL_CLASS_BY_CATEGORY
 from .external import RETROFIT_CATEGORY
 from .external import SHIP_CATEGORY
 from .external import SHIP_RARITY_BY_CATEGORY
-from .external import get_client
+from .external import get_wiki_client
+from .external import load_skin_data
 from .sitefiles import get_data_path
 from .sitefiles import write_pvp_json_data
 from .types import EQUIP_RANK_BY_COLOR
@@ -337,16 +337,8 @@ def main():
     with open((PROJECT_ROOT / 'exports/Azur Lane EN PvP Guide 2024-10-20.html').resolve(), encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'lxml')
 
-    skin_data_file = GAME_RESOURCES_DIR / 'ship_skin.json'
-
-    if not skin_data_file.is_file():
-        raise Exception(f'{skin_data_file} does not exist or is not a file. Update gamefiles.')
-
-    with open(skin_data_file, encoding='utf-8') as f:
-        ship_skin_data = json.load(f)
-
-    client = get_client()
-    cache = DataCache(ship_skin_data)
+    client = get_wiki_client()
+    cache = DataCache(load_skin_data())
 
     usages = []
     failures = []
