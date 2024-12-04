@@ -16,7 +16,7 @@ import more_itertools as mit
 
 from . import PROJECT_ROOT
 from . import SITE_SOURCE
-from .external import AnyData
+from .external import ExternalData
 from .external import DATA_TYPE_CATEGORIES
 from .external import EQUIPMENT_CATEGORY
 from .external import HULL_CLASS_BY_CATEGORY
@@ -41,7 +41,7 @@ PAGE_NAME_FIXES = {
 
 
 class DataCache:
-    _data_cache: dict[str, AnyData]
+    _data_cache: dict[str, ExternalData]
     _nicknames: dict[str, set[str]]
     _ship_skin_data: dict[str, dict]
 
@@ -50,7 +50,7 @@ class DataCache:
         self._nicknames = defaultdict(set)
         self._ship_skin_data = skin_data
 
-    def _fetch_data(self, page: MediaWikiPage) -> AnyData:
+    def _fetch_data(self, page: MediaWikiPage) -> ExternalData:
         categories = {c.lower() for c in page.categories}
 
         recognized = categories.intersection(DATA_TYPE_CATEGORIES)
@@ -168,7 +168,7 @@ class DataCache:
             raise NotImplementedError(f'Extracting data from {data_type} not yet implemented')
 
     # Returns data and whether it came from cache or not
-    def _resolve_data(self, client: MediaWiki, url: str) -> tuple[AnyData, bool]:
+    def _resolve_data(self, client: MediaWiki, url: str) -> tuple[ExternalData, bool]:
         url = urlparse(url)
         original_page_name = urlunquote(url.path.removeprefix('/').removeprefix('wiki').removeprefix('/'))
 
@@ -200,18 +200,18 @@ class DataCache:
 
         return result, False
 
-    def get_data(self, client: MediaWiki, url: str, nickname: str) -> tuple[AnyData, bool]:
-        '''
+    def get_data(self, client: MediaWiki, url: str, nickname: str) -> tuple[ExternalData, bool]:
+        """
         Fetches data, using cache if possible and reading from wiki if not.
 
         Returns: data and whether data was cached
-        '''
+        """
         result, cached = self._resolve_data(client, url)
         self._nicknames[result.name].add(nickname)
         return result, cached
 
     @property
-    def alldata(self) -> Collection[AnyData]:
+    def alldata(self) -> Collection[ExternalData]:
         return set(self._data_cache.values())
 
     @property
@@ -238,8 +238,6 @@ def parse_equip_table(
     for rownum, row in enumerate(table.find_all('tr'), start=1):
         for colnum, cell in enumerate(row.find_all('td'), start=1):
             try:
-                page_data, cached = None, None
-
                 link_children = cell.find_all('a')
 
                 if len(link_children) == 1:

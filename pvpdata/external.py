@@ -17,14 +17,13 @@ def get_client() -> MediaWiki:
     )
 
 
-SHIP_RARITY_BY_CATEGORY = {r.category_name: r for r in ShipRarity}
+SHIP_RARITY_BY_CATEGORY = {r.long_name.lower() + ' ships': r for r in ShipRarity}
 
 RETROFIT_CATEGORY = 'ships with retrofit'
 
 HULL_CLASS_BY_CATEGORY = {hc.category_name: hc for hc in HullClass}
 
-# TODO: Rename to WikiExtractData
-AnyData = Ship | Equipment
+ExternalData = Ship | Equipment
 
 EQUIPMENT_CATEGORY = 'equipment'
 SHIP_CATEGORY = 'ships'

@@ -1,5 +1,4 @@
 from collections import defaultdict
-from collections.abc import Sequence
 import dataclasses
 from dataclasses import dataclass
 from dataclasses import field
@@ -36,9 +35,6 @@ class ShipRarity(Enum):
         self.color = color
         self.can_retrofit = can_retrofit
         self.research = research
-
-        # TODO: Move to wiki module
-        self.category_name = self.long_name.lower() + ' ships'
 
     @property
     def retrofit_rarity(self):
@@ -137,12 +133,11 @@ class EquipmentRarity(Enum):
         self.long_name = long_name
         self.color = color
 
-    # TODO: self.stars is broken
     def __str__(self):
-        return f'{self.long_name} {self.stars}*'
+        return f'{self.long_name}'
 
     def __repr__(self):
-        return f'<{type(self).__name__}:{self.code} {self.stars}*>'
+        return f'<{type(self).__name__}:{self.code}>'
 
 
 EQUIP_RARITY_BY_STARS = {
@@ -237,8 +232,7 @@ EQUIPMENT_SLOT_KEYS = {1, 2, 3, 'aux'}
 class ShipUsage:
     ship: Ship
     description: str | None = None
-    # TODO: Change Sequence to list or maybe MutableSequence
-    slots: dict[int | str, Sequence[EquipWithRank]] = field(default_factory=lambda: defaultdict(list))
+    slots: dict[int | str, list[EquipWithRank]] = field(default_factory=lambda: defaultdict(list))
 
     def sort_slots(self):
         for s in self.slots.values():
