@@ -1,5 +1,6 @@
 from collections import defaultdict
 from collections.abc import Collection
+from collections.abc import Mapping
 import json
 from operator import attrgetter
 import re
@@ -88,9 +89,7 @@ class DataCache:
                 rarity = rarity.retrofit_rarity
 
             hull_class_cats = categories.intersection(HULL_CLASS_BY_CATEGORY)
-            if len(hull_class_cats) <= 1:
-                hull_class = HULL_CLASS_BY_CATEGORY[mit.one(hull_class_cats, ValueError(f'No hull class category found for {page.title}'))]
-            elif retrofit and len(hull_class_cats) == 2:
+            if retrofit and len(hull_class_cats) == 2:
                 if retro_hullclass := re.search(r'\|\s*subtyperetro\s*=([^|]+)\|', page.wikitext, re.IGNORECASE):
                     hull_class = HullClass.find_by_long_name(retro_hullclass[1].strip())
                 else:
@@ -99,7 +98,12 @@ class DataCache:
                         'but unable to find SubtypeRetro data'
                     )
             else:
-                ValueError(f'Unable to determine hull class from multiple categories for {page.title}: {hull_class_cats}'),
+                hull_class = HULL_CLASS_BY_CATEGORY[mit.one(
+                    hull_class_cats,
+                    ValueError(f'No hull class category found for {page.title}'),
+                    ValueError(f'Unable to determine hull class from multiple categories for {page.title}: {hull_class_cats}'),
+                )]
+
 
             skin_type = 'retrofit' if retrofit else 'default'
 
@@ -130,7 +134,8 @@ class DataCache:
 
             stars = max(available_stars)
             # Validate number of stars
-            EQUIP_RARITY_BY_STARS[stars]
+            if stars not in EQUIP_RARITY_BY_STARS:
+                raise ValueError(f'{stars} is not a valid number of equipment stars')
 
             available_tech_levels = [
                 TechLevel(int(m))
@@ -220,11 +225,21 @@ class DataCache:
         return MappingProxyType(self._nicknames)
 
 
-def try_parse_json(json_text):
+def extract_data_sheets_value(cell):
+    json_text = cell.attrs.get('data-sheets-value')
+
+    if not json_text:
+        return None
+
     try:
-        return json.loads(json_text)
+        data_sheets_value = json.loads(json_text)
     except json.JSONDecodeError:
         return None
+
+    if not isinstance(data_sheets_value, Mapping):
+        return None
+
+    return data_sheets_value.get('2')
 
 
 def parse_equip_table(
@@ -275,8 +290,7 @@ def parse_equip_table(
                     elif (
                         cell.text
                         and not link_children
-                        and (parsed_value := try_parse_json(cell.attrs.get('data-sheets-value')))
-                        and parsed_value.get('2')
+                        and (data_sheets_val := extract_data_sheets_value(cell))
                     ):
                         # Not empty, no link, not an image, and has JSON in value attr.
                         # Must be description?
@@ -287,10 +301,8 @@ def parse_equip_table(
 
                         # Using the parsed JSON from data-sheets-value preserves all newlines
                         # and other characters the HTML escapes without having to transform it back.
-                        description = parsed_value['2']
                         # Convert manual bullets to Markdown list
-                        description = description.replace('\u2022', '*')
-                        current_usage.description = description
+                        current_usage.description = data_sheets_val.replace('\u2022', '*')
                         print(rownum, colnum, 'Description:', current_usage.desc_preview)
                     elif not cell.text:
                         # Check this last to avoid accidentally missing other possibilities
@@ -364,7 +376,8 @@ def main():
         cache.alldata,
         keyfunc=type,
         # Ensure output is sorted to minimize diffs
-        reducefunc=lambda data: {d.name: d for d in sorted(data, key=attrgetter('name'))}
+        # dict preserves insertion order in current version of Python.
+        reducefunc=lambda typegroup: {d.name: d for d in sorted(typegroup, key=attrgetter('name'))}
     )
     for t, data in data_by_types.items():
         write_pvp_json_data(get_data_path(t), data)
