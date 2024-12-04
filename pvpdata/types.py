@@ -1,3 +1,7 @@
+"""
+Data types for data represented in the site's files.
+"""
+
 from collections import defaultdict
 import dataclasses
 from dataclasses import dataclass
@@ -13,6 +17,7 @@ class RarityColor(Enum):
     PURPLE = enum.auto()
     GOLD = enum.auto()
     RAINBOW = enum.auto()
+
 
 class ShipRarity(Enum):
     N  = ('Normal', RarityColor.GRAY, True, False)

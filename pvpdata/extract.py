@@ -1,3 +1,11 @@
+"""
+Program to extract data from the spreadsheet version of the guide and
+generate data for the site.
+
+This program reads from an HTML export of the spreadsheet. It is only tested
+against an export from LibreOffice 24.8.2.1.
+"""
+
 from collections import defaultdict
 from collections.abc import Collection
 from collections.abc import Mapping

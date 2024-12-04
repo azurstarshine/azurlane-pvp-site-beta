@@ -1,3 +1,7 @@
+"""
+Functions and information for working with the site's data files.
+"""
+
 from collections.abc import Mapping
 import json
 from pathlib import Path

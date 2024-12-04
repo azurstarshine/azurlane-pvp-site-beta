@@ -1,3 +1,8 @@
+"""
+Functions and information for working with external data sources, including
+the wiki and the resources repository.
+"""
+
 from datetime import timedelta
 
 from mediawiki import MediaWiki
