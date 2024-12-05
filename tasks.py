@@ -1,25 +1,21 @@
 from functools import partial
 import json
-from pathlib import Path
-import shutil
 
-from invoke import task
-from invoke.exceptions import Exit
 # We only use GitPython for some specific utilities.
 # It does not support sparse checkouts and other features we
 # use to minimize disk space and downloads.
-from git.util import rmtree as git_rmtree
 from git.repo.fun import is_git_dir
+from git.util import rmtree as git_rmtree
+from invoke import task
+from invoke.exceptions import Exit
 
-import pvpdata
 from pvpdata import GAME_RESOURCES_DIR
 from pvpdata import PROJECT_ROOT
-from pvpdata import SITE_SOURCE
 from pvpdata.types import Ship
-
+from pvpdata import sitefiles
 
 RESOURCE_REPO_URL = r'https://github.com/Fernando2603/AzurLane.git'
-PVP_SHIP_FILE = pvpdata.get_data_path(Ship)
+PVP_SHIP_FILE = sitefiles.get_data_path(Ship)
 
 
 def exec_gamefiles_git(ctx, command):
