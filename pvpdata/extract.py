@@ -6,17 +6,16 @@ This program reads from an HTML export of the spreadsheet. It is only tested
 against an export from LibreOffice 24.8.2.1.
 """
 
-from collections import defaultdict
-from collections.abc import Collection
 from collections.abc import Mapping
 import json
 from operator import attrgetter
 from time import sleep
-from types import MappingProxyType
 from urllib.parse import unquote as urlunquote
 from urllib.parse import urlparse
+from urllib.parse import ParseResult as UrlParseResult
 import warnings
 
+import bs4
 from bs4 import BeautifulSoup
 from mediawiki import MediaWiki
 import more_itertools as mit
@@ -33,6 +32,8 @@ from .types import EquipWithRank
 from .types import Equipment
 from .types import Ship
 from .types import ShipUsage
+from .util import LazyValue
+from .util import MultikeyCache
 
 # Manual overrides for broken page names
 PAGE_NAME_FIXES = {
@@ -40,69 +41,11 @@ PAGE_NAME_FIXES = {
 }
 
 
-class DataCache:
-    _data_cache: dict[str, ExternalData]
-    _nicknames: dict[str, set[str]]
-    _ship_skin_data: dict[str, dict]
-
-    def __init__(self, skin_data: dict[str, dict]):
-        self._data_cache = {}
-        self._nicknames = defaultdict(set)
-        self._ship_skin_data = skin_data
-
-    # Returns data and whether it came from cache or not
-    def _resolve_data(self, client: MediaWiki, url: str) -> tuple[ExternalData, bool]:
-        url = urlparse(url)
-        original_page_name = urlunquote(url.path.removeprefix('/').removeprefix('wiki').removeprefix('/'))
-
-        if cached := self._data_cache.get(original_page_name, None):
-            return cached, True
-
-        page_name = PAGE_NAME_FIXES.get(original_page_name, original_page_name)
-
-        if cached := self._data_cache.get(page_name, None):
-            return cached, True
-
-        p = client.page(page_name, auto_suggest=False)
-
-        if cached := self._data_cache.get(p.title, None):
-            return cached, True
-
-        # All possible names checked. Data is not cached.
-
-        result = load_external_data(self._ship_skin_data, p)
-
-        self._data_cache[result.name] = result
-        if page_name != result.name:
-            self._data_cache[page_name] = result
-        if original_page_name != page_name:
-            self._data_cache[original_page_name] = result
-
-        if url.fragment and not urlparse(result.url).fragment:
-            warnings.warn(f'url fragment lost: {url.fragment}')
-
-        return result, False
-
-    def get_data(self, client: MediaWiki, url: str, nickname: str) -> tuple[ExternalData, bool]:
-        """
-        Fetches data, using cache if possible and reading from wiki if not.
-
-        Returns: data and whether data was cached
-        """
-        result, cached = self._resolve_data(client, url)
-        self._nicknames[result.name].add(nickname)
-        return result, cached
-
-    @property
-    def alldata(self) -> Collection[ExternalData]:
-        return set(self._data_cache.values())
-
-    @property
-    def nicknames(self) -> MappingProxyType[str, set[str]]:
-        return MappingProxyType(self._nicknames)
+def extract_page_name(wikiurl: UrlParseResult) -> str:
+    return urlunquote(wikiurl.path.removeprefix('/').removeprefix('wiki').removeprefix('/'))
 
 
-def extract_data_sheets_value(cell):
+def extract_data_sheets_value(cell) -> str | None:
     json_text = cell.attrs.get('data-sheets-value')
 
     if not json_text:
@@ -120,9 +63,10 @@ def extract_data_sheets_value(cell):
 
 
 def parse_equip_table(
-    table,
-    client,
-    cache,
+    client: MediaWiki,
+    ship_skin_data,
+    cache: MultikeyCache[str, ExternalData],
+    table: bs4.Tag,
 ):
     usages = []
     failures = []
@@ -134,10 +78,37 @@ def parse_equip_table(
                 link_children = cell.find_all('a')
 
                 if len(link_children) == 1:
-                    url = link_children[0].attrs['href']
-                    nickname = link_children[0].text
+                    urltext: str = link_children[0].attrs['href']
+                    nickname: str = link_children[0].text
 
-                    page_data, cached = cache.get_data(client, url, nickname)
+                    url: UrlParseResult = urlparse(urltext)
+
+                    raw_page_name = extract_page_name(url)
+                    page_name = PAGE_NAME_FIXES.get(raw_page_name, raw_page_name)
+                    lazypage = LazyValue(lambda: client.page(page_name, auto_suggest=False))
+
+                    # Use a generator function to avoid loading the page if not needed
+                    def names():
+                        if page_name != raw_page_name:
+                            yield raw_page_name
+                        yield page_name
+                        # Resolves wiki redirects
+                        yield lazypage.value.title
+
+                    page_data, cached = cache.get(
+                        names(),
+                        # Must NOT use partial to ensure page is loaded lazily
+                        lambda: load_external_data(ship_skin_data, lazypage.value)
+                    )
+
+                    loaded_fragment = urlparse(page_data.url).fragment
+                    if url.fragment != loaded_fragment:
+                        if not loaded_fragment:
+                            warnings.warn(f'url fragment lost: {url.fragment}')
+                        elif not url.fragment:
+                            warnings.warn(f'url fragment added: {loaded_fragment}')
+                        else:
+                            warnings.warn(f'url fragment changed: {url.fragment} to {loaded_fragment}')
 
                     if isinstance(page_data, Ship):
                         if current_usage:
@@ -208,42 +179,27 @@ def main():
         soup = BeautifulSoup(f, 'lxml')
 
     client = get_wiki_client()
-    cache = DataCache(load_skin_data())
+    ship_skin_data = load_skin_data()
+    cache = MultikeyCache()
 
     usages = []
     failures = []
 
     for table_name in ['table4', 'table5']:
-        table_element = soup.find('a', {'name': table_name}).find_next('table')
-        cur_uses, cur_fails = parse_equip_table(table_element, client, cache)
+        table_element: bs4.Tag = soup.find('a', {'name': table_name}).find_next('table')
+        cur_uses, cur_fails = parse_equip_table(client, ship_skin_data, cache, table_element)
         usages.extend(cur_uses)
         failures.extend((table_name, *f) for f in cur_fails)
 
     print()
 
-    print()
-    print('Multiple names:')
-    for name, nicknames in cache.nicknames.items():
-        if len(nicknames) > 1:
-            print(f'{name}: ' + ','.join(nicknames))
-
-    print()
-    print('Conflicting nicknames:')
-    by_nickname = defaultdict(set)
-    for name, nicknames in cache.nicknames.items():
-        for n in nicknames:
-            by_nickname[n].add(name)
-
-    for nickname, names in by_nickname.items():
-        if len(names) > 1:
-            print('{nickname}: ' + ','.join(names))
 
     print('Failed to load:')
     for f in failures:
         print(*f)
 
     data_by_types = mit.map_reduce(
-        cache.alldata,
+        cache.allvalues,
         keyfunc=type,
         # Ensure output is sorted to minimize diffs
         # dict preserves insertion order in current version of Python.
