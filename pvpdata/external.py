@@ -54,10 +54,12 @@ SHIP_CATEGORY = 'ships'
 
 DATA_TYPE_CATEGORIES = {EQUIPMENT_CATEGORY, SHIP_CATEGORY}
 
+#region Data assembly
 
 def _assemble_ship_data(
     skin_data,
     title: str,
+    nickname: str,
     resolved_url: UrlParseResult,
     categories: set[str],
     wikitext: str,
@@ -114,6 +116,7 @@ def _assemble_ship_data(
 
     return Ship(
         title,
+        nickname,
         gid,
         resolved_url.geturl(),
         rarity,
@@ -125,6 +128,7 @@ def _assemble_ship_data(
 
 def _assemble_equip_data(
     title: str,
+    nickname: str,
     resolved_url: UrlParseResult,
     wikitext: str,
 ) -> Equipment:
@@ -170,14 +174,17 @@ def _assemble_equip_data(
 
     return Equipment(
         title,
+        nickname,
         resolved_url.geturl(),
         stars,
         tech_level,
         image_id,
     )
 
+#endregion
 
-def load_external_data(ship_skin_data, page: MediaWikiPage) -> ExternalData:
+
+def load_external_data(ship_skin_data, nickname: str, page: MediaWikiPage) -> ExternalData:
     categories = {c.lower() for c in page.categories}
 
     recognized = categories.intersection(DATA_TYPE_CATEGORIES)
@@ -192,12 +199,13 @@ def load_external_data(ship_skin_data, page: MediaWikiPage) -> ExternalData:
         return _assemble_ship_data(
             ship_skin_data,
             page.title,
+            nickname,
             resolved_url,
             categories,
             page.wikitext
         )
     elif data_type == EQUIPMENT_CATEGORY:
-        return _assemble_equip_data(page.title, resolved_url, page.wikitext)
+        return _assemble_equip_data(page.title, nickname, resolved_url, page.wikitext)
     else:
         raise NotImplementedError(f'Extracting data from {data_type} not yet implemented')
 

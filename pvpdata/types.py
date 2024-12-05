@@ -107,6 +107,7 @@ class HullClass(Enum):
 @dataclass(frozen=True)
 class Ship:
     name: str
+    nickname: str
     gid: int
     url: str
     rarity: ShipRarity
@@ -180,6 +181,7 @@ class TechLevel(Enum):
 @dataclass(frozen=True)
 class Equipment:
     name: str
+    nickname: str
     url: str
     stars: int
     tech_level: TechLevel

@@ -1,6 +1,7 @@
 {
     "Akagi": {
         "name": "Akagi",
+        "nickname": "Akagi",
         "gid": 30701,
         "url": "https://azurlane.koumakan.jp/wiki/Akagi",
         "rarity": "SR",
@@ -10,6 +11,7 @@
     },
     "Alsace": {
         "name": "Alsace",
+        "nickname": "Alsace",
         "gid": 80503,
         "url": "https://azurlane.koumakan.jp/wiki/Alsace",
         "rarity": "UR",
@@ -19,6 +21,7 @@
     },
     "Amagi": {
         "name": "Amagi",
+        "nickname": "Amagi",
         "gid": 30405,
         "url": "https://azurlane.koumakan.jp/wiki/Amagi",
         "rarity": "SR",
@@ -28,6 +31,7 @@
     },
     "Anchorage": {
         "name": "Anchorage",
+        "nickname": "Anchorage",
         "gid": 19903,
         "url": "https://azurlane.koumakan.jp/wiki/Anchorage",
         "rarity": "PR",
@@ -37,6 +41,7 @@
     },
     "Aquila": {
         "name": "Aquila",
+        "nickname": "Aquila",
         "gid": 60701,
         "url": "https://azurlane.koumakan.jp/wiki/Aquila",
         "rarity": "SR",
@@ -46,6 +51,7 @@
     },
     "Ayanami": {
         "name": "Ayanami",
+        "nickname": "Ayanami Kai",
         "gid": 30105,
         "url": "https://azurlane.koumakan.jp/wiki/Ayanami",
         "rarity": "SR",
@@ -55,6 +61,7 @@
     },
     "Birmingham": {
         "name": "Birmingham",
+        "nickname": "Birmingham",
         "gid": 10223,
         "url": "https://azurlane.koumakan.jp/wiki/Birmingham",
         "rarity": "E",
@@ -64,6 +71,7 @@
     },
     "Chise Asukagawa": {
         "name": "Chise Asukagawa",
+        "nickname": "Chise",
         "gid": 1080006,
         "url": "https://azurlane.koumakan.jp/wiki/Chise_Asukagawa",
         "rarity": "SR",
@@ -73,6 +81,7 @@
     },
     "Duca degli Abruzzi": {
         "name": "Duca degli Abruzzi",
+        "nickname": "Duca",
         "gid": 60201,
         "url": "https://azurlane.koumakan.jp/wiki/Duca_degli_Abruzzi",
         "rarity": "SR",
@@ -82,6 +91,7 @@
     },
     "Eldridge": {
         "name": "Eldridge",
+        "nickname": "Eldy Retro",
         "gid": 10126,
         "url": "https://azurlane.koumakan.jp/wiki/Eldridge",
         "rarity": "UR",
@@ -91,6 +101,7 @@
     },
     "Enterprise": {
         "name": "Enterprise",
+        "nickname": "Enterprise",
         "gid": 10706,
         "url": "https://azurlane.koumakan.jp/wiki/Enterprise",
         "rarity": "SR",
@@ -100,6 +111,7 @@
     },
     "Essex": {
         "name": "Essex",
+        "nickname": "Essex",
         "gid": 10709,
         "url": "https://azurlane.koumakan.jp/wiki/Essex",
         "rarity": "SR",
@@ -109,6 +121,7 @@
     },
     "Felix Schultz": {
         "name": "Felix Schultz",
+        "nickname": "Felix Schultz",
         "gid": 49908,
         "url": "https://azurlane.koumakan.jp/wiki/Felix_Schultz",
         "rarity": "PR",
@@ -118,6 +131,7 @@
     },
     "Fortune META": {
         "name": "Fortune META",
+        "nickname": "Fortune M",
         "gid": 970102,
         "url": "https://azurlane.koumakan.jp/wiki/Fortune_META",
         "rarity": "E",
@@ -127,6 +141,7 @@
     },
     "Friedrich der Gro\u00dfe": {
         "name": "Friedrich der Gro\u00dfe",
+        "nickname": "FDG",
         "gid": 49902,
         "url": "https://azurlane.koumakan.jp/wiki/Friedrich_der_Gro%C3%9Fe",
         "rarity": "DR",
@@ -136,6 +151,7 @@
     },
     "Harbin": {
         "name": "Harbin",
+        "nickname": "Harbin",
         "gid": 59901,
         "url": "https://azurlane.koumakan.jp/wiki/Harbin",
         "rarity": "PR",
@@ -145,6 +161,7 @@
     },
     "Helena": {
         "name": "Helena",
+        "nickname": "Helena Kai",
         "gid": 10205,
         "url": "https://azurlane.koumakan.jp/wiki/Helena",
         "rarity": "SR",
@@ -154,6 +171,7 @@
     },
     "Hiryuu": {
         "name": "Hiryuu",
+        "nickname": "Hiryuu Kai",
         "gid": 30704,
         "url": "https://azurlane.koumakan.jp/wiki/Hiryuu",
         "rarity": "SR",
@@ -163,6 +181,7 @@
     },
     "Independence": {
         "name": "Independence",
+        "nickname": "Indep Kai",
         "gid": 10722,
         "url": "https://azurlane.koumakan.jp/wiki/Independence",
         "rarity": "SR",
@@ -172,6 +191,7 @@
     },
     "Jintsuu": {
         "name": "Jintsuu",
+        "nickname": "Jintsuu Kai",
         "gid": 30213,
         "url": "https://azurlane.koumakan.jp/wiki/Jintsuu",
         "rarity": "SR",
@@ -181,6 +201,7 @@
     },
     "Jintsuu META": {
         "name": "Jintsuu META",
+        "nickname": "Jintsuu META",
         "gid": 970205,
         "url": "https://azurlane.koumakan.jp/wiki/Jintsuu_META",
         "rarity": "SR",
@@ -190,6 +211,7 @@
     },
     "Juneau": {
         "name": "Juneau",
+        "nickname": "Juneau Kai",
         "gid": 10207,
         "url": "https://azurlane.koumakan.jp/wiki/Juneau",
         "rarity": "E",
@@ -199,6 +221,7 @@
     },
     "Kaga": {
         "name": "Kaga",
+        "nickname": "Kaga",
         "gid": 30702,
         "url": "https://azurlane.koumakan.jp/wiki/Kaga",
         "rarity": "SR",
@@ -208,6 +231,7 @@
     },
     "Kearsarge": {
         "name": "Kearsarge",
+        "nickname": "Kearsarge",
         "gid": 19904,
         "url": "https://azurlane.koumakan.jp/wiki/Kearsarge",
         "rarity": "DR",
@@ -217,6 +241,7 @@
     },
     "Laffey II": {
         "name": "Laffey II",
+        "nickname": "LaffII",
         "gid": 10151,
         "url": "https://azurlane.koumakan.jp/wiki/Laffey_II",
         "rarity": "UR",
@@ -226,6 +251,7 @@
     },
     "Leipzig": {
         "name": "Leipzig",
+        "nickname": "Leipzig",
         "gid": 40204,
         "url": "https://azurlane.koumakan.jp/wiki/Leipzig",
         "rarity": "E",
@@ -235,6 +261,7 @@
     },
     "Musashi": {
         "name": "Musashi",
+        "nickname": "Musashi",
         "gid": 30510,
         "url": "https://azurlane.koumakan.jp/wiki/Musashi",
         "rarity": "UR",
@@ -244,6 +271,7 @@
     },
     "Naganami": {
         "name": "Naganami",
+        "nickname": "Naganami",
         "gid": 30183,
         "url": "https://azurlane.koumakan.jp/wiki/Naganami",
         "rarity": "E",
@@ -253,6 +281,7 @@
     },
     "Nagato": {
         "name": "Nagato",
+        "nickname": "Nagato",
         "gid": 30505,
         "url": "https://azurlane.koumakan.jp/wiki/Nagato",
         "rarity": "SR",
@@ -262,6 +291,7 @@
     },
     "New Jersey": {
         "name": "New Jersey",
+        "nickname": "NJ",
         "gid": 10517,
         "url": "https://azurlane.koumakan.jp/wiki/New_Jersey",
         "rarity": "UR",
@@ -271,6 +301,7 @@
     },
     "Noshiro": {
         "name": "Noshiro",
+        "nickname": "Noshiro",
         "gid": 30221,
         "url": "https://azurlane.koumakan.jp/wiki/Noshiro",
         "rarity": "SR",
@@ -280,6 +311,7 @@
     },
     "Perseus": {
         "name": "Perseus",
+        "nickname": "Perseus",
         "gid": 20606,
         "url": "https://azurlane.koumakan.jp/wiki/Perseus",
         "rarity": "SR",
@@ -289,6 +321,7 @@
     },
     "Richelieu": {
         "name": "Richelieu",
+        "nickname": "Richelieu",
         "gid": 80501,
         "url": "https://azurlane.koumakan.jp/wiki/Richelieu",
         "rarity": "SR",
@@ -298,6 +331,7 @@
     },
     "San Diego": {
         "name": "San Diego",
+        "nickname": "Sandy Kai",
         "gid": 10208,
         "url": "https://azurlane.koumakan.jp/wiki/San_Diego",
         "rarity": "UR",
@@ -307,6 +341,7 @@
     },
     "Seattle": {
         "name": "Seattle",
+        "nickname": "Seattle",
         "gid": 19901,
         "url": "https://azurlane.koumakan.jp/wiki/Seattle",
         "rarity": "PR",
@@ -316,6 +351,7 @@
     },
     "Sendai": {
         "name": "Sendai",
+        "nickname": "Sendai Kai",
         "gid": 30212,
         "url": "https://azurlane.koumakan.jp/wiki/Sendai",
         "rarity": "E",
@@ -325,6 +361,7 @@
     },
     "Seydlitz": {
         "name": "Seydlitz",
+        "nickname": "Seydlitz",
         "gid": 40403,
         "url": "https://azurlane.koumakan.jp/wiki/Seydlitz",
         "rarity": "SR",
@@ -334,6 +371,7 @@
     },
     "Shimakaze": {
         "name": "Shimakaze",
+        "nickname": "Shimakaze",
         "gid": 30129,
         "url": "https://azurlane.koumakan.jp/wiki/Shimakaze",
         "rarity": "UR",
@@ -343,6 +381,7 @@
     },
     "Shinano": {
         "name": "Shinano",
+        "nickname": "Shinano",
         "gid": 30708,
         "url": "https://azurlane.koumakan.jp/wiki/Shinano",
         "rarity": "UR",
@@ -352,6 +391,7 @@
     },
     "South Dakota": {
         "name": "South Dakota",
+        "nickname": "Sodak",
         "gid": 10514,
         "url": "https://azurlane.koumakan.jp/wiki/South_Dakota",
         "rarity": "SR",
@@ -361,6 +401,7 @@
     },
     "Sovetsky Soyuz": {
         "name": "Sovetsky Soyuz",
+        "nickname": "Soyuz",
         "gid": 70502,
         "url": "https://azurlane.koumakan.jp/wiki/Sovetsky_Soyuz",
         "rarity": "UR",
@@ -370,6 +411,7 @@
     },
     "Tamaki": {
         "name": "Tamaki",
+        "nickname": "Tamaki",
         "gid": 1060009,
         "url": "https://azurlane.koumakan.jp/wiki/Tamaki",
         "rarity": "SR",
@@ -379,6 +421,7 @@
     },
     "Unicorn": {
         "name": "Unicorn",
+        "nickname": "Unicorn Kai",
         "gid": 20603,
         "url": "https://azurlane.koumakan.jp/wiki/Unicorn",
         "rarity": "SR",
@@ -388,6 +431,7 @@
     },
     "Unzen": {
         "name": "Unzen",
+        "nickname": "Unzen",
         "gid": 30319,
         "url": "https://azurlane.koumakan.jp/wiki/Unzen",
         "rarity": "UR",
@@ -397,6 +441,7 @@
     },
     "Vanguard": {
         "name": "Vanguard",
+        "nickname": "Vanguard",
         "gid": 20513,
         "url": "https://azurlane.koumakan.jp/wiki/Vanguard",
         "rarity": "UR",
@@ -406,6 +451,7 @@
     },
     "Vittorio Veneto": {
         "name": "Vittorio Veneto",
+        "nickname": "VV",
         "gid": 60501,
         "url": "https://azurlane.koumakan.jp/wiki/Vittorio_Veneto",
         "rarity": "SR",
@@ -415,6 +461,7 @@
     },
     "Warspite": {
         "name": "Warspite",
+        "nickname": "Warspoot",
         "gid": 20502,
         "url": "https://azurlane.koumakan.jp/wiki/Warspite",
         "rarity": "UR",
@@ -424,6 +471,7 @@
     },
     "Yorktown II": {
         "name": "Yorktown II",
+        "nickname": "Yorktown II",
         "gid": 10710,
         "url": "https://azurlane.koumakan.jp/wiki/Yorktown_II",
         "rarity": "UR",
@@ -433,6 +481,7 @@
     },
     "Yukikaze": {
         "name": "Yukikaze",
+        "nickname": "Yukikaze",
         "gid": 30116,
         "url": "https://azurlane.koumakan.jp/wiki/Yukikaze",
         "rarity": "SR",
@@ -442,6 +491,7 @@
     },
     "\u00c4gir": {
         "name": "\u00c4gir",
+        "nickname": "Agir",
         "gid": 49905,
         "url": "https://azurlane.koumakan.jp/wiki/%C3%84gir",
         "rarity": "DR",

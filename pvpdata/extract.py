@@ -94,6 +94,7 @@ def parse_equip_table(
             link_children = cell.find_all('a')
 
             if len(link_children) == 1:
+                #region External resource cell
                 urltext: str = link_children[0].attrs['href']
                 nickname: str = link_children[0].text
 
@@ -114,8 +115,11 @@ def parse_equip_table(
                 page_data, cached = cache.get(
                     names(),
                     # Must NOT use partial to ensure page is loaded lazily
-                    lambda: load_external_data(ship_skin_data, lazypage.value)
+                    lambda: load_external_data(ship_skin_data, nickname, lazypage.value)
                 )
+
+                if page_data.nickname != nickname:
+                    warnings.warn(f'Nickname mismatch: {page_data.nickname} (first) != {nickname} (new) ({page_data.name} data)')
 
                 loaded_fragment = urlparse(page_data.url).fragment
                 if url.fragment != loaded_fragment:
@@ -149,6 +153,7 @@ def parse_equip_table(
                         warnings.warn(f'Found equipment outside ship: {page_data.name}')
 
                 print(loc, page_data, '(cached)' if cached else '')
+                #endregion
             elif current_usage:
                 if cell.attrs.get('data-sheets-formula', '').lower().startswith('=image'):
                     print(loc, 'is an image')
@@ -209,11 +214,23 @@ def main():
 
     print()
 
+    print()
+    print('Conflicting nicknames:')
+    by_nickname = mit.map_reduce(
+        cache.allvalues,
+        keyfunc=attrgetter('nickname'),
+        valuefunc=attrgetter('name'),
+    )
+    for nickname, names in by_nickname.items():
+        if len(names) > 1:
+            print('{nickname}: ' + ','.join(names))
 
+    print()
     print('Failed to load:')
     for f in failures:
         print(*f)
 
+    print()
     data_by_types = mit.map_reduce(
         cache.allvalues,
         keyfunc=type,
