@@ -172,7 +172,7 @@ class TechLevel(Enum):
         return f'Type_{self.value}-0'
 
     def __str__(self):
-        return f'T{self.value}'
+        return self.name
 
     def __repr__(self):
         return f'<{type(self).__name__}:{self}>'
@@ -209,51 +209,51 @@ class EquipmentRank(Enum):
         return self.numeric < other.numeric
 
     def __str__(self):
-        return self.name
+        return self.name.lower()
 
     def __repr__(self):
-        return f'<{type(self).__name__}:{self}>'
+        return f'<{type(self).__name__}:{self.name}>'
 
 EQUIP_RANK_BY_COLOR = {r.bgcolor: r for r in EquipmentRank}
 
 @dataclass(frozen=True)
 class EquipWithRank:
-    equip: Equipment
+    equip_name: str
     rank: EquipmentRank
 
     def __str__(self):
-        return f'{self.equip.name} ({self.rank.name.lower()})'
+        return f'{self.equip_name} ({self.rank})'
 
 
 EQUIPMENT_SLOT_KEYS = {1, 2, 3, 'aux'}
 
 @dataclass
 class ShipUsage:
-    ship: Ship
+    ship_name: str
     description: str | None = None
-    slots: dict[int | str, list[EquipWithRank]] = field(default_factory=lambda: defaultdict(list))
+    equip_slots: dict[int | str, list[EquipWithRank]] = field(default_factory=lambda: defaultdict(list))
 
     def sort_slots(self):
-        for s in self.slots.values():
+        for s in self.equip_slots.values():
             s.sort(key=lambda ewr: ewr.rank)
 
     def validate(self):
-        if not self.ship:
+        if not self.ship_name:
             raise ValueError('No ship')
 
         if not self.description:
             raise ValueError('No description')
 
-        if not self.slots:
+        if not self.equip_slots:
             raise ValueError('No equipment slot data')
 
-        missing = EQUIPMENT_SLOT_KEYS.difference(self.slots.keys())
-        extra = set(self.slots.keys()) - EQUIPMENT_SLOT_KEYS
+        missing = EQUIPMENT_SLOT_KEYS.difference(self.equip_slots.keys())
+        extra = set(self.equip_slots.keys()) - EQUIPMENT_SLOT_KEYS
 
         if missing or extra:
             raise ValueError(f'{missing} slots missing, extra slots {extra}')
 
-        if empty_slots := [slot for slot, equip in self.slots.items() if not equip]:
+        if empty_slots := [slot for slot, equip in self.equip_slots.items() if not equip]:
             raise ValueError(f'Emtpy slots {empty_slots}')
 
     @property
@@ -269,12 +269,12 @@ class ShipUsage:
 
     def __str__(self):
         data_repr = ', '.join([
-            f'ship={self.ship.name}',
+            f'ship_name={self.ship_name}',
             f'description={self.desc_preview}',
-            'slots={'
+            'equip_slots={'
             + ','.join([
                 f'{slot}: [' + ','.join([str(e) for e in equips]) + ']'
-                for slot, equips in self.slots.items()
+                for slot, equips in self.equip_slots.items()
             ])
             + '}',
         ])

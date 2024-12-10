@@ -138,7 +138,7 @@ def parse_equip_table(
                         print('Completed ship usage', current_usage)
                         sleep(1)
 
-                    current_usage = ShipUsage(page_data)
+                    current_usage = ShipUsage(page_data.name)
                     print()
                 elif isinstance(page_data, Equipment):
                     if current_usage:
@@ -148,7 +148,7 @@ def parse_equip_table(
 
                         rank = EQUIP_RANK_BY_COLOR[cell.attrs['bgcolor'].lower()]
 
-                        current_usage.slots[slot].append(EquipWithRank(page_data, rank))
+                        current_usage.equip_slots[slot].append(EquipWithRank(page_data.name, rank))
                     else:
                         warnings.warn(f'Found equipment outside ship: {page_data.name}')
 
@@ -167,7 +167,7 @@ def parse_equip_table(
 
                     if current_usage.description:
                         # Programming error. Need to distinguish description better.
-                        raise Exception(f'Treating cell at {loc} as second description for {current_usage.ship.name}')
+                        raise Exception(f'Treating cell at {loc} as second description for {current_usage.ship_name}')
 
                     # Using the parsed JSON from data-sheets-value preserves all newlines
                     # and other characters the HTML escapes without having to transform it back.

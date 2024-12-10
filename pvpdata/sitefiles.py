@@ -11,7 +11,6 @@ from types import MappingProxyType
 from typing import Any
 
 from . import DATA_DIR
-from .types import EquipWithRank
 from .types import Equipment
 from .types import Ship
 from .types import ShipUsage
@@ -30,23 +29,14 @@ def get_data_path(datatype: type):
 
 
 def to_json_serializable(o):
-    # TODO: Simplify these data types to use the names instead of
-    # full objects
-    if isinstance(o, EquipWithRank):
-        return {'name': o.equip.name, 'rank': str(o.rank)}
-
-    if isinstance(o, ShipUsage):
-        return {
-            'ship': o.ship.name,
-            'description': o.description,
-            'equipment': o.slots,
-        }
-
     if dataclasses.is_dataclass(o):
         return dataclasses.asdict(o)
 
     if isinstance(o, Enum):
-        return o.name
+        if hasattr(o, 'code'):
+            return o.code
+        else:
+            return str(o)
 
     raise TypeError(f'Cannot serialize {o} {type(o).__name__})')
 
