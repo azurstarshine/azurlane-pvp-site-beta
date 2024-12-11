@@ -1,0 +1,13 @@
+/* Azur Lane PVP Guide customizations */
+
+// Most customizations are inside #pvp-wrapper to increase priority over theme styles
+
+@use 'headerlink';
+@use 'equip';
+
+// Remove space for sidebar
+// See https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064
+article.page {
+    float: left;
+    width: 90%;
+}

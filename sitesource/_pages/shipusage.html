@@ -3,19 +3,41 @@ title: Ship Usage
 permalink: /ships/
 ---
 
-{% for u in site.data.ship_usage %}
-    <div id="{{u.ship | downcase}}">
-        <h2>{{u.ship}}</h2>
-        <div>{{u.description | markdownify}}</div>
-        <ol>
-            {% for slot in u.equipment %}
-                <label>{{slot[0]}}</label>
-                <ol>
-                    {% for e in slot[1] %}
-                        <li class="{{e.rank | downcase}}">{{e.name}}</li>
+<div id="pvp-wrapper"> <!-- Wrapper element to increase CSS selector priority -->
+{% for usage in site.data.ship_usage %}
+    {% assign fullship = site.data.ship[usage.ship_name] %}
+    {% assign ship_elem_id = fullship.name | normalize_whitespace | downcase | replace: ' ','-' %}
+    <section id="{{ship_elem_id}}">
+        <h2>
+            {{fullship.nickname}}
+            {% if fullship.nickname != fullship.name %}
+                ({{fullship.name}})
+            {% endif %}
+            <a class="headerlink" href="#{{ship_elem_id | url_encode}}">&#x1F517;</a>
+        </h2>
+        <p>{{usage.description | markdownify}}</p>
+        <ol class="equip-slot-list">
+            {% for slot in usage.equip_slots %}
+                <li>
+                <h3 class="text-center">{{slot[0]}}</h3>
+                <ol class="equip-list">
+                    {% for eq_use in slot[1] %}
+                        {% assign fullequip = site.data.equipment[eq_use.equip_name] %}
+                        <li class="equip">
+                            <a href="{{fullequip.url}}">
+                                <h3 class="rank-{{eq_use.rank}} text-center">{{fullequip.nickname}}</h3>
+                                <img
+                                    class="equip-{{fullequip.stars}}-star align-center"
+                                    src="{{ '/assets/img/equipment/' | append: fullequip.image_id | append: '.png' | relative_url}}"
+                                    alt="{{fullequip.name}} icon"
+                                >
+                            </a>
+                        </li>
                     {% endfor %}
                 </ol>
+                </li>
             {% endfor %}
         </ol>
-    </div>
+    </section>
 {% endfor %}
+</div>

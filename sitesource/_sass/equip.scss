@@ -1,0 +1,81 @@
+@use 'rarity';
+
+#pvp-wrapper {
+    .equip-list {
+        list-style-type: none; // No marker
+        padding: 0.1em;
+    }
+
+    .equip-slot-list {
+        list-style-type: none; // No marker
+        display: inline-flex; // Arrange horizontally
+    }
+
+
+    li.equip {
+        width: 100%; // stretch elements to width of column
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid;
+        margin: 0px; // No space between items
+    }
+
+    li.equip + li.equip {
+        border-top: none; // Deduplicate borders betwen adjacent items
+    }
+
+    .equip * {
+        width: 100%; // stretch elements to width of column
+        font-size: inherit;
+    }
+
+    .equip h3 {
+        margin: 0px;
+        padding: 2px 5px;
+    }
+
+    .equip img {
+        --equip-img-pad: 3px;
+        padding: var(--equip-img-pad);
+        min-width: 112px;
+        height: calc(96px + 2 * var(--equip-img-pad));
+        object-fit: contain;
+    }
+
+    // Rank background colors
+
+    .rank-optimal {
+        background: #5AD766; // green
+    }
+
+    .rank-viable {
+        background: #FFCE32; // yellow
+    }
+
+    .rank-situational {
+        background: #E02F2F; // red
+    }
+
+    // Rarity background colors
+
+    .equip-1-star,
+    .equip-2-star {
+        background: rarity.$lightgray;
+    }
+
+    .equip-3-star {
+        background: rarity.$blue;
+    }
+
+    .equip-4-star {
+        background: rarity.$purple;
+    }
+
+    .equip-5-star {
+        background: rarity.$gold;
+    }
+
+    .equip-6-star {
+        background: rarity.$rainbow;
+    }
+}

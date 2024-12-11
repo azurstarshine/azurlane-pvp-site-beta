@@ -1,0 +1,11 @@
+
+#pvp-wrapper {
+    a.headerlink {
+        visibility: hidden;
+        text-decoration: none;
+    }
+
+    h2:hover a.headerlink {
+        visibility: visible;
+    }
+}
